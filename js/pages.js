@@ -296,11 +296,11 @@ window.pages = [
                     },
                     {
                         text: `mon-ip.com`,
-                        href: `http://www.mon-ip.com/info-adresse-ip.php`
+                        href: `https://www.mon-ip.com/info-adresse-ip.php`
                     },
                     {
                         text: `Check IP`,
-                        href: `http://checkip.amazonaws.com`
+                        href: `https://checkip.amazonaws.com`
                     },
                     {
                         text: `Masque`,
@@ -317,7 +317,7 @@ window.pages = [
                     },
                     {
                         text: `Tutorial`,
-                        href: `http://www.rexegg.com`
+                        href: `https://www.rexegg.com`
                     },
                     {
                         text: `Cheat Sheet`,
@@ -358,7 +358,7 @@ window.pages = [
                     },
                     {
                         text: `Synonymo`,
-                        href: `http://www.synonymo.fr`
+                        href: `https://www.synonymo.fr`
                     },
                     {
                         text: `Thesaurus`,
