@@ -17,7 +17,7 @@ window.template = {
                 >__text__</a>
             `,
             icon: `
-                <a target="_blank"
+                <a rel="noreferrer noopener" rel="noreferrer noopener" target="_blank"
                     href="__href__"
                     onclick="dispatch.event('Click Footer', 'Icon', '__text__')">
                     <img class="foot-i icon"
@@ -48,7 +48,7 @@ window.template = {
                     </div>
                 `,
                 sub: `
-                    <a class="link" target="_blank" href="__href__"
+                    <a class="link" rel="noreferrer noopener" target="_blank" href="__href__"
                         onclick="dispatch.event('Click Page', 'Card link', '__label__')"
                     >__text__</a>
                 `
