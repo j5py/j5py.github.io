@@ -20,7 +20,7 @@ window.ui = {
             , menu = document.querySelector('#drop-i-c')
             ;
         burger.addEventListener('click', () => {
-            ui.updateStyleAttribute(
+            js.dom.updateStyleAttribute(
                 menu,
                 /display\:\s*\w+\s*(!important)*;/g,
                 true,
@@ -29,7 +29,7 @@ window.ui = {
         });
         document.addEventListener('click', (event) => {
             if (!event.target.closest('#drop-i')) {
-                ui.updateStyleAttribute(
+                js.dom.updateStyleAttribute(
                     menu,
                     /display\:\s*\w+\s*(!important)*;/g,
                     true,
@@ -37,10 +37,5 @@ window.ui = {
                 )
             }
         })
-    },
-    updateStyleAttribute: (node, removeStringRegex, addStringCondition, stringToAdd) => {
-        let css = (node.getAttribute('style') || '').replace(removeStringRegex, '').trim();
-        if (addStringCondition) node.setAttribute('style', (css.length ? css + ' ' : css) + stringToAdd);
-        else node.setAttribute('style', css)
     }
 }
