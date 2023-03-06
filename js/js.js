@@ -47,15 +47,26 @@ window.js = {
         compatibility: {
             fix: {
                 internetExplorer: {
-                    arrayIncludes: (value, array) => {
-                        value = String(value);
-                        var i = 0, hasValue = false;
-                        while (i < array.length) {
-                            if (array[i] === value) {
-                                hasValue = true;
-                                break
-                            } i++
-                        } return hasValue
+                    array: {
+                        includes: (value, array) => {
+                            value = String(value);
+                            var i = 0, hasValue = false;
+                            while (i < array.length) {
+                                if (array[i] === value) {
+                                    hasValue = true;
+                                    break
+                                } i++
+                            } return hasValue
+                        },
+                        join: (separator, array) => {
+                            let joined = '';
+                            if (separator === undefined) separator = ',';
+                            for (var i = 0; i < array.length; i++) {
+                                if (i > 0) joined += separator;
+                                joined += String(array[i])
+                            }
+                            return joined
+                        }
                     },
                     getQueryString: (parameter) => {
                         var key = parameter + '='
