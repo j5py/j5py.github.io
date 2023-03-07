@@ -1,7 +1,4 @@
 window.pages = [
-
-
-
     // {
     //     title: `Example`,
     //     cards: [
@@ -16,47 +13,150 @@ window.pages = [
     //         },
     //     ]
     // },
-
-
-
     {
-        title: `Front-end`,
+        title: `Information`,
+        cards: [
+            {
+                header: `Education`,
+                links: [
+                    {
+                        text: `Coursera`,
+                        href: `https://www.coursera.org/`
+                    },
+                    {
+                        text: `30 seconds of code`,
+                        href: `https://www.30secondsofcode.org/`
+                    }
+                ]
+            },
+            {
+                header: `AI`,
+                links: [
+                    {
+                        text: `ChatGPT`,
+                        href: `https://chat.openai.com/chat`
+                    }
+                ]
+            },
+            {
+                header: `Language`,
+                links: [
+                    {
+                        text: `CNRTL`,
+                        href: `https://www.cnrtl.fr/portail`
+                    },
+                    {
+                        text: `Conjugueur`,
+                        href: `https://www.gymglish.com/fr/conjugaison/vatefaireconjuguer`
+                    },
+                    {
+                        text: `Wiktionary`,
+                        href: `https://www.wiktionary.org`
+                    },
+                    {
+                        text: `Thesaurus`,
+                        href: `https://www.thesaurus.com`
+                    },
+                    {
+                        text: `Translate`,
+                        href: `https://translate.google.com/?ui=tob&sl=en&tl=fr&op=translate`
+                    }
+                ]
+            },
+            {
+                header: `Codes`,
+                links: [
+                    {
+                        text: `Language`,
+                        href: `https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes`
+                    },
+                    {
+                        text: `Country`,
+                        href: `https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes`
+                    },
+                    {
+                        text: `Calling`,
+                        href: `https://en.wikipedia.org/wiki/List_of_country_calling_codes`
+                    }
+                ]
+            },
+            {
+                header: `Location`,
+                links: [
+                    {
+                        text: `Google Maps`,
+                        href: `https://www.google.com/maps`
+                    },
+                    {
+                        text: `OpenStreetMap`,
+                        href: `https://www.openstreetmap.org/`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        title: `Browser`,
         cards: [
             {
                 header: `Chrome`,
                 links: [
                     {
                         text: `DevTools`,
-                        href: `https://developer.chrome.com/docs/devtools/overview`
-                    },
-                    {
-                        text: `Debugging`,
-                        href: `https://developers.google.com/web/tools/chrome-devtools/javascript/reference`
+                        href: `https://developer.chrome.com/docs/devtools/overview/`
                     },
                     {
                         text: `Local Overrides`,
-                        href: `https://developers.google.com/web/updates/2018/01/devtools#overrides`
+                        href: `https://developer.chrome.com/blog/new-in-devtools-65/#overrides`
                     },
                     {
-                        text: `Web Fundamentals`,
-                        href: `https://developers.google.com/web/fundamentals`
+                        text: `Resource Override`,
+                        href: `https://chrome.google.com/webstore/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        title: `Network`,
+        cards: [
+            {
+                header: `IP`,
+                links: [
+                    {
+                        text: `Check IP`,
+                        href: `https://checkip.amazonaws.com/`
+                    },
+                    {
+                        text: `mon-ip.com`,
+                        href: `https://www.mon-ip.com/info-adresse-ip.php`
+                    },
+                    {
+                        text: `Masque IPv4`,
+                        href: `https://cric.grenoble.cnrs.fr/Administrateurs/Outils/CalculMasque/`
                     }
                 ]
             },
             {
-                header: `Extension`,
+                header: `HTTP`,
                 links: [
                     {
-                        text: `Resource Override`,
-                        href: `https://chrome.google.com/webstore/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii`
-                    },
+                        text: `Status Codes`,
+                        href: `https://developer.mozilla.org/en-US/docs/Web/HTTP/Status`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        title: `Front-end`,
+        cards: [
+            {
+                header: `Code`,
+                links: [
                     {
-                        text: `Wappalyzer`,
-                        href: `https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg/related`
-                    },
-                    {
-                        text: `ColorZilla`,
-                        href: `https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp`
+                        text: `Beautifier`,
+                        href: `https://beautifier.io/`
                     }
                 ]
             },
@@ -69,23 +169,15 @@ window.pages = [
                     },
                     {
                         text: `Eloquent`,
-                        href: `https://eloquentjavascript.net`
+                        href: `https://eloquentjavascript.net/`
                     },
                     {
                         text: `ECMAScript`,
-                        href: `https://www.ecma-international.org/ecma-262/11.0/index.html#title`
+                        href: `https://262.ecma-international.org/`
                     },
                     {
                         text: `Reserved Words`,
                         href: `https://www.w3schools.com/js/js_reserved.asp`
-                    },
-                    {
-                        text: `Algorithms and Data`,
-                        href: `https://github.com/trekhleb/javascript-algorithms#javascript-algorithms-and-data-structures`
-                    },
-                    {
-                        text: `JSON Syntax`,
-                        href: `https://www.w3schools.com/js/js_json_syntax.asp`
                     }
                 ]
             },
@@ -98,36 +190,7 @@ window.pages = [
                     },
                     {
                         text: `Flexbox`,
-                        href: `https://css-tricks.com/snippets/css/a-guide-to-flexbox`
-                    }
-                ]
-            },
-            {
-                header: `Color`,
-                links: [
-                    {
-                        text: `Web colors`,
-                        href: `https://en.wikipedia.org/wiki/Web_colors`
-                    },
-                    {
-                        text: `uiGradients`,
-                        href: `https://uigradients.com/#SoundCloud`
-                    },
-                    {
-                        text: `Color Hunt`,
-                        href: `https://colorhunt.co`
-                    },
-                    {
-                        text: `Coolors`,
-                        href: `https://coolors.co`
-                    },
-                    {
-                        text: `Adobe Color`,
-                        href: `https://color.adobe.com/fr/create/color-contrast-analyzer`
-                    },
-                    {
-                        text: `Color Converter`,
-                        href: `https://www.w3schools.com/colors/colors_converter.asp`
+                        href: `https://css-tricks.com/snippets/css/a-guide-to-flexbox/`
                     }
                 ]
             },
@@ -135,41 +198,41 @@ window.pages = [
                 header: `Font`,
                 links: [
                     {
-                        text: `Base64 Transfonter`,
-                        href: `https://transfonter.org`
-                    },
-                    {
                         text: `Web Safe Fonts`,
                         href: `https://www.w3schools.com/cssref/css_websafe_fonts.asp`
                     },
                     {
+                        text: `Base64 Transfonter`,
+                        href: `https://transfonter.org/`
+                    },
+                    {
                         text: `Google Fonts`,
-                        href: `https://fonts.google.com`
+                        href: `https://fonts.google.com/`
                     }
                 ]
             },
             {
-                header: `Icon`,
+                header: `Color`,
                 links: [
                     {
-                        text: `Tabler Icons`,
-                        href: `https://tablericons.com`
+                        text: `Color Hunt`,
+                        href: `https://colorhunt.co/`
                     },
                     {
-                        text: `iconmonstr`,
-                        href: `https://iconmonstr.com`
+                        text: `Web colors`,
+                        href: `https://en.wikipedia.org/wiki/Web_colors`
                     },
                     {
-                        text: `flaticon`,
-                        href: `https://www.flaticon.com`
+                        text: `Color Converter`,
+                        href: `https://www.w3schools.com/colors/colors_converter.asp`
                     },
                     {
-                        text: `Noun Project`,
-                        href: `https://thenounproject.com`
+                        text: `uiGradients`,
+                        href: `https://uigradients.com/`
                     },
                     {
-                        text: `IconStore`,
-                        href: `https://iconstore.co`
+                        text: `Coolors`,
+                        href: `https://coolors.co/`
                     }
                 ]
             },
@@ -178,133 +241,58 @@ window.pages = [
                 links: [
                     {
                         text: `Unsplash`,
-                        href: `https://unsplash.com`
+                        href: `https://unsplash.com/`
                     },
                     {
-                        text: `humaaans`,
-                        href: `https://www.humaaans.com`
+                        text: `iconmonstr`,
+                        href: `https://iconmonstr.com/`
                     },
                     {
                         text: `SVG to PNG`,
-                        href: `https://svgtopng.com`
+                        href: `https://svgtopng.com/`
                     },
                     {
                         text: `Base64 Encoder`,
-                        href: `https://www.base64-image.de`
+                        href: `https://www.base64-image.de/`
                     },
                     {
                         text: `Image Color Picker`,
-                        href: `https://imagelr.com`
+                        href: `https://imagelr.com/`
                     },
                     {
                         text: `Remove Background`,
-                        href: `https://www.remove.bg`
-                    }
-                ]
-            },
-            {
-                header: `Capture`,
-                links: [
-                    {
-                        text: `Full Page Screen Capture`,
-                        href: `https://fullpagescreencapture.com`
-                    },
-                    {
-                        text: `GoFullPage`,
-                        href: `https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl/related`
+                        href: `https://www.remove.bg/`
                     }
                 ]
             }
         ]
     },
-
-
-
     {
-        title: `Programming tools`,
+        title: `Programming`,
         cards: [
             {
-                header: `AI`,
+                header: `Versioning`,
                 links: [
                     {
-                        text: `ChatGPT`,
-                        href: `https://chat.openai.com`
+                        text: `Git Documentation`,
+                        href: `https://git-scm.com/doc`
+                    },
+                    {
+                        text: `Markdown Editor`,
+                        href: `https://markdown-editor.github.io/`
                     }
                 ]
             },
             {
-                header: `Code`,
+                header: `Compare`,
                 links: [
                     {
-                        text: `Beautifier`,
-                        href: `https://beautifier.io`
-                    },
-                    {
                         text: `Diffchecker`,
-                        href: `https://www.diffchecker.com`
+                        href: `https://www.diffchecker.com/`
                     },
                     {
                         text: `DiffNow`,
                         href: `https://www.diffnow.com/compare-clips`
-                    },
-                    {
-                        text: `vscode.dev`,
-                        href: `https://vscode.dev`
-                    },
-                    {
-                        text: `Byte Counter`,
-                        href: `https://mothereff.in/byte-counter`
-                    },
-                    {
-                        text: `30 seconds of code`,
-                        href: `https://www.30secondsofcode.org`
-                    }
-                ]
-            },
-            {
-                header: `Git`,
-                links: [
-                    {
-                        text: `Markdown Editor`,
-                        href: `https://markdown-editor.github.io`
-                    }
-                ]
-            },
-            {
-                header: `HTTP`,
-                links: [
-                    {
-                        text: `Status Codes`,
-                        href: `https://developer.mozilla.org/en-US/docs/Web/HTTP/Status`
-                    },
-                    {
-                        text: `Query String`,
-                        href: `https://en.wikipedia.org/wiki/Query_string`
-                    },
-                    {
-                        text: `URLDecoder`,
-                        href: `https://www.urldecoder.io`
-                    }
-                ]
-            },
-            {
-                header: `Network`,
-                links: [
-                    {
-                        text: `Internet Speed`,
-                        href: `https://fast.com`
-                    },
-                    {
-                        text: `mon-ip.com`,
-                        href: `https://www.mon-ip.com/info-adresse-ip.php`
-                    },
-                    {
-                        text: `Check IP`,
-                        href: `https://checkip.amazonaws.com`
-                    },
-                    {
-                        text: `Masque`,
-                        href: `https://cric.grenoble.cnrs.fr/Administrateurs/Outils/CalculMasque`
                     }
                 ]
             },
@@ -313,79 +301,32 @@ window.pages = [
                 links: [
                     {
                         text: `101`,
-                        href: `https://regex101.com`
-                    },
-                    {
-                        text: `Tutorial`,
-                        href: `https://www.rexegg.com`
-                    },
-                    {
-                        text: `Cheat Sheet`,
-                        href: `https://regexcheatsheet.com`
+                        href: `https://regex101.com/`
                     },
                     {
                         text: `RegExr`,
-                        href: `https://regexr.com`
+                        href: `https://regexr.com/`
+                    },
+                    {
+                        text: `Tutorial`,
+                        href: `https://www.rexegg.com/`
                     }
                 ]
             }
         ]
     },
-
-
-
     {
-        title: `Information`,
+        title: `Linux / Unix`,
         cards: [
             {
-                header: `Language`,
+                header: `CLI`,
                 links: [
                     {
-                        text: `Translate`,
-                        href: `https://translate.google.com/?ui=tob&sl=en&tl=fr&op=translate`
-                    },
-                    {
-                        text: `Wiktionary`,
-                        href: `https://www.wiktionary.org`
-                    },
-                    {
-                        text: `CNRTL`,
-                        href: `https://www.cnrtl.fr/portail`
-                    },
-                    {
-                        text: `Conjugueur`,
-                        href: `https://www.gymglish.com/fr/conjugaison/vatefaireconjuguer`
-                    },
-                    {
-                        text: `Synonymo`,
-                        href: `https://www.synonymo.fr`
-                    },
-                    {
-                        text: `Thesaurus`,
-                        href: `https://www.thesaurus.com`
+                        text: `File Permissions`,
+                        href: `https://www.guru99.com/file-permissions.html`
                     }
                 ]
             },
-            {
-                header: `Location`,
-                links: [
-                    {
-                        text: `Calling codes`,
-                        href: `https://en.wikipedia.org/wiki/List_of_country_calling_codes`
-                    },
-                    {
-                        text: `Country codes`,
-                        href: `https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes`
-                    },
-                    {
-                        text: `Google Maps`,
-                        href: `https://www.google.com/maps`
-                    }
-                ]
-            }
         ]
     }
-
-
-
 ]
