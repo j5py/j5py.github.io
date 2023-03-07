@@ -27,6 +27,9 @@ window.js = {
                 location.hash = hash;
                 location.search = search
             }
+        },
+        getParameter: (name) => {
+            return new URLSearchParams(document.location.search).get(name)
         }
     }
 }
