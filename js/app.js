@@ -5,6 +5,7 @@ window.app = {
         dispatch.init()
     },
     route: () => {
+        js.location.ensureSearchBeforeHash();
         let i = 0
           , notFound = true
           ;
