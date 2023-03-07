@@ -271,8 +271,21 @@ window.pages = [
         title: `Programming`,
         cards: [
             {
+                header: `Editor`,
+                links: [
+                    {
+                        text: `Visual Studio Code`,
+                        href: `https://code.visualstudio.com/docs`
+                    }
+                ]
+            },
+            {
                 header: `Versioning`,
                 links: [
+                    {
+                        text: `GitHub Docs`,
+                        href: `https://docs.github.com/`
+                    },
                     {
                         text: `Git Documentation`,
                         href: `https://git-scm.com/doc`
