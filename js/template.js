@@ -41,7 +41,7 @@ window.template = {
             element: {
                 main: `
                     <div class="card">
-                        <a class="card-t" href="__anchor__">__header__</a>
+                        <div class="card-t" id="__anchor__">__header__</div>
                         <div class="card-c">
                             __links__
                         </div>
