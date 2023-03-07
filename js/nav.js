@@ -4,7 +4,7 @@ window.nav = {
         pages.forEach((page) => {
             links.push({
                 text: page.title,
-                href: js.string.slugify(page.title, true)
+                href: `?page=${js.string.slugify(page.title)}`
             })
         }); return links
     }()),
@@ -12,7 +12,7 @@ window.nav = {
         textLinks: [
             {
                 text: `Hosted on GitHub Pages`,
-                href: `https://pages.github.com`
+                href: `https://pages.github.com/`
             },
 
             // DATA
