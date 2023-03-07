@@ -1,7 +1,12 @@
 window.js = {
     string: {
-        slugify: (string) => {
-            return `#${encodeURI(string.toLowerCase().replace(/\s+((\/|\&)\s)?/g, '-'))}`
+        slugify: (string, hash) => {
+            return (hash ? '#' : '') + encodeURI(
+                string.toLowerCase().replace(
+                    /(\’|\')\s*?|(\s((\/|\||\&|\-)\s)?)/g,
+                    '-'
+                )
+            )
         }
     },
     dom: {

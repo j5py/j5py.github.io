@@ -4,7 +4,7 @@ window.nav = {
         pages.forEach((page) => {
             links.push({
                 text: page.title,
-                href: js.string.slugify(page.title)
+                href: js.string.slugify(page.title, true)
             })
         }); return links
     }()),

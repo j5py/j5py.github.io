@@ -10,7 +10,7 @@ window.app = {
           , notFound = true
           ;
         while (i < pages.length) {
-            if (js.string.slugify(pages[i].title) === location.hash) {
+            if (js.string.slugify(pages[i].title, true) === location.hash) {
                 notFound = false;
                 ui.setContent(
                     dynamic.content.getHTML(pages[i]),
