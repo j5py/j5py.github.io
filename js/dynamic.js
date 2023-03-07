@@ -30,7 +30,7 @@ window.dynamic = {
         getHTML: (page, cards = '') => {
             page.cards.forEach((entry) => {
                 let card = template.content.card.element.main
-                        .replace('__anchor__', js.string.slugify(entry.header, true))
+                        .replace('__anchor__', js.string.slugify(entry.header))
                         .replace('__header__', entry.header)
                   , links = ''
                   ;
