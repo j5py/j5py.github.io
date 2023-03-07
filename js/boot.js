@@ -16,8 +16,8 @@ window.boot = {
         },
         waitLoad: (seconds, checkRequirements, invokeCallback, invokeAnyway) => {
             let i = 0;
-            const milliseconds = 250
-                , maximum = seconds * 4
+            const milliseconds = 100
+                , maximum = seconds * 10
                 , check = setInterval(() => {
                     if (checkRequirements()) {
                         clearInterval(check);
