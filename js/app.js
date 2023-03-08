@@ -11,7 +11,7 @@ window.app = {
           , notFound = true
           ;
         while (i < pages.length) {
-            if (js.string.slugify(pages[i].title, true) === page) {
+            if (js.string.slugify(pages[i].title) === page) {
                 notFound = false;
                 ui.setContent(
                     dynamic.content.getHTML(pages[i]),
@@ -19,7 +19,7 @@ window.app = {
                 ); break
             } i++
         }
-        if (location.hash === '') {
+        if (page === '') {
             ui.setContent(
                 dynamic.content.getHTML(pages[0]),
                 pages[0].title
@@ -27,7 +27,6 @@ window.app = {
         } else if (notFound) ui.set404()
     },
     run: () => {
-        window.onhashchange = app.route;
         window.onsearch = app.route;
         app.route()
     }
