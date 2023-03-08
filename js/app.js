@@ -7,11 +7,10 @@ window.app = {
     route: () => {
         js.location.ensureSearchBeforeHash();
         let i = 0
-          , page = js.location.getParameter('page')
           , notFound = true
           ;
         while (i < pages.length) {
-            if (js.string.slugify(pages[i].title) === page) {
+            if (js.string.slugify(pages[i].title) === location.hash) {
                 notFound = false;
                 ui.setContent(
                     dynamic.content.getHTML(pages[i]),
@@ -19,7 +18,7 @@ window.app = {
                 ); break
             } i++
         }
-        if (page === '') {
+        if (location.hash === '') {
             ui.setContent(
                 dynamic.content.getHTML(pages[0]),
                 pages[0].title
@@ -27,8 +26,8 @@ window.app = {
         } else if (notFound) ui.set404()
     },
     run: () => {
-        window.onsearch = app.route;
-        app.route()
+        app.route();
+        window.onhashchange = app.route
     }
 }
 
