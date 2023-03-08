@@ -24,6 +24,10 @@ window.pages = [
                         href: `https://www.coursera.org/`
                     },
                     {
+                        text: `OpenClassrooms`,
+                        href: `https://openclassrooms.com/`
+                    },
+                    {
                         text: `30 seconds of code`,
                         href: `https://www.30secondsofcode.org/`
                     }
