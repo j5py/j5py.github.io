@@ -1,12 +1,7 @@
 window.js = {
     string: {
-        slugify: (string, hash) => {
-            return (hash ? '#' : '') + encodeURI(
-                string.toLowerCase().replace(
-                    /(\’|\')\s*?|(\s((\/|\||\&|\-)\s)?)/g,
-                    '-'
-                )
-            )
+        slugify: (string) => {
+            return `#${encodeURI(string.toLowerCase().replace(/\s+((\/|\&)\s)?/g, '-'))}`
         }
     },
     dom: {
@@ -27,9 +22,6 @@ window.js = {
                 location.hash = hash;
                 location.search = search
             }
-        },
-        getParameter: (name) => {
-            return new URLSearchParams(document.location.search).get(name)
         }
     }
 }
