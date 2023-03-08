@@ -19,7 +19,7 @@ window.app = {
                 ); break
             } i++
         }
-        if (page === '') {
+        if (page === null) {
             ui.setContent(
                 dynamic.content.getHTML(pages[0]),
                 pages[0].title
