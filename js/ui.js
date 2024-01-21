@@ -1,9 +1,8 @@
 window.ui = {
     setNav: () => {
         document.querySelector('header h1').innerHTML = nav.brand;
-        dynamic.nav.setBurger();
-        dynamic.nav.setFooter();
-        ui.listenBurger()
+        if (dynamic.nav.setBurger()) ui.listenBurger();
+        dynamic.nav.setFooter()
     },
     setContent: (html, title) => {
         document.title = nav.brand + ' - ' + title;

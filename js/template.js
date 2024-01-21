@@ -42,6 +42,7 @@ window.template = {
                 `,
                 sub: `<a class="link" rel="noreferrer noopener" target="_blank" href="__href__">__text__</a>`
             }
-        }
+        },
+        default: `<div class="msg">This site is under construction, no content has been added yet.</div>`
     }
 }

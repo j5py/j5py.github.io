@@ -1,12 +1,18 @@
 window.dynamic = {
     nav: {
         setBurger: (links = '') => {
-            nav.burger.forEach((entry) => {
-                links += template.nav.burger.link
-                    .replace(/__text__/g, entry.text)
-                    .replace('__href__', entry.href)
-            });
-            document.querySelector('#drop-i-c').insertAdjacentHTML('afterbegin', links)
+            if (nav.burger.length) {
+                nav.burger.forEach((entry) => {
+                    links += template.nav.burger.link
+                        .replace(/__text__/g, entry.text)
+                        .replace('__href__', entry.href)
+                });
+                document.querySelector('#drop-i-c').insertAdjacentHTML('afterbegin', links)
+                return true
+            } else {
+                document.querySelector('nav').remove()
+                return false
+            }
         },
         setFooter: (texts = '', icons = '') => {
             nav.footer.textLinks.forEach((entry) => {
@@ -27,7 +33,7 @@ window.dynamic = {
         }
     },
     content: {
-        getHTML: (page, cards = '') => {
+        getPageCards: (page, cards = '') => {
             page.cards.forEach((entry) => {
                 let card = template.content.card.element.main.replace('__header__', entry.header),
                 links = '';

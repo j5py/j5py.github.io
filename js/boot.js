@@ -1,6 +1,6 @@
 window.boot = {
     script: {
-        cacheBuster: true,
+        cacheBuster: true, // Allows testing via Chrome Local Overrides when set to false
         steps: [
             'js', 'pages', 'nav', 'template', 'dynamic', 'ui', 'app'
         ],
