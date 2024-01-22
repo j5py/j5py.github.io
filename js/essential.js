@@ -1,4 +1,4 @@
-window.js = {
+essential = {
     string: {
         slugify: (string) => {
             return `#${encodeURI(string.toLowerCase().replace(/\s+((\/|\&)\s)?/g, '-'))}`
