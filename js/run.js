@@ -10,11 +10,11 @@ run = {
         let i = 0, notFound = 1;
         if (input.fewPages.length) {
             if (location.hash === '') {
-                render.page.set(page.get(input.fewPages[0]), input.fewPages[0].pageTitle);
+                render.page.set(ready.page.get(input.fewPages[0]), input.fewPages[0].pageTitle);
                 notFound = 0;
             } else while (i < input.fewPages.length) {
                 if (location.hash === common.string.getSlug(input.fewPages[i].pageTitle)) {
-                    render.page.set(page.get(input.fewPages[i]), input.fewPages[i].pageTitle);
+                    render.page.set(ready.page.get(input.fewPages[i]), input.fewPages[i].pageTitle);
                     notFound = 0;
                     break
                 } i++

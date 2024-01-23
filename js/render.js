@@ -2,11 +2,11 @@ render = {
     nav: {
         set: () => {
             document.querySelector('header h1').innerHTML = input.brand;
-            if (navigation.nav) {
+            if (ready.nav) {
                 const regEx = /display\:\s*\w+\s*(!important)*;/g
                     , droppable = document.querySelector('#drop-i-c')
                     ;
-                droppable.insertAdjacentHTML('afterbegin', navigation.nav);
+                droppable.insertAdjacentHTML('afterbegin', ready.nav);
                 document.querySelector('#drop-i').addEventListener('click', () => {
                     common.dom.moveStyleAttribute(droppable, regEx, 1, 'display:block;')
                 });
@@ -26,8 +26,8 @@ render = {
     },
     footer: {
         set: () => {
-            document.querySelector('#foot-texts').insertAdjacentHTML('afterbegin', navigation.footer.links);
-            document.querySelector('#foot-icons').insertAdjacentHTML('afterbegin', navigation.footer.icons)
+            document.querySelector('#foot-texts').insertAdjacentHTML('afterbegin', ready.footer.links);
+            document.querySelector('#foot-icons').insertAdjacentHTML('afterbegin', ready.footer.icons)
         }
     }  
 }

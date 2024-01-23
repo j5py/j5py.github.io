@@ -2,7 +2,7 @@ boot = {
     script: {
         cacheBuster: true,
         steps: [
-            'common', 'model', 'input', 'navigation', 'page', 'render', 'run'
+            'common', 'input', 'model', 'ready', 'render', 'run'
         ],
         add: (url, cacheBuster, callback) => {
             let node = document.createElement('script');
