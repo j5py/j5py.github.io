@@ -1,8 +1,8 @@
 boot = {
     script: {
-        cacheBuster: true, // Allows testing via Chrome Local Overrides when set to false
+        cacheBuster: true,
         steps: [
-            'essential', 'html', 'input', 'prepare', 'process', 'render', 'run'
+            'common', 'model', 'input', 'navigation', 'page', 'render', 'run'
         ],
         add: (url, cacheBuster, callback) => {
             let node = document.createElement('script');

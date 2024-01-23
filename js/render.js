@@ -1,43 +1,33 @@
 render = {
     nav: {
         set: () => {
-            document.querySelector('header h1').innerHTML = prepare.brand;
-            if (process.nav.set()) render.nav.listen();
-            process.footer.set()
-        },
-        listen: () => {
-            const droppable = document.querySelector('#drop-i-c')
-                ;
-            document.querySelector('#drop-i').addEventListener('click', () => {
-                essential.dom.updateStyleAttribute(
-                    droppable,
-                    /display\:\s*\w+\s*(!important)*;/g,
-                    true,
-                    'display:block;'
-                )
-            });
-            document.addEventListener('click', (event) => {
-                if (!event.target.closest('#drop-i')) {
-                    essential.dom.updateStyleAttribute(
-                        droppable,
-                        /display\:\s*\w+\s*(!important)*;/g,
-                        true,
-                        'display:none;'
-                    )
-                }
-            })
+            document.querySelector('header h1').innerHTML = input.brand;
+            if (navigation.nav) {
+                const regEx = /display\:\s*\w+\s*(!important)*;/g
+                    , droppable = document.querySelector('#drop-i-c')
+                    ;
+                droppable.insertAdjacentHTML('afterbegin', navigation.nav);
+                document.querySelector('#drop-i').addEventListener('click', () => {
+                    common.dom.moveStyleAttribute(droppable, regEx, 1, 'display:block;')
+                });
+                document.addEventListener('click', (event) => {
+                    if (!event.target.closest('#drop-i'))
+                        common.dom.moveStyleAttribute(droppable, regEx, 1, 'display:none;')
+                })
+            } else document.querySelector('nav').remove()
         }
     },
-    content: {
-        setPage: (rendered, title) => {
-            document.title = prepare.brand + ' - ' + title;
-            document.querySelector('#container').innerHTML = rendered;
+    page: {
+        set: (it, title) => {
+            document.title = input.brand + ' - ' + title;
+            document.querySelector('#container').innerHTML = it;
             window.scrollTo(0, 0)
-        },
-        set404: () => {
-            document.title = prepare.brand + ' 404 Not Found';
-            document.querySelector('#container').innerHTML =
-                '<div class="msg">This URL does not return any content</div>'
         }
-    }
+    },
+    footer: {
+        set: () => {
+            document.querySelector('#foot-texts').insertAdjacentHTML('afterbegin', navigation.footer.links);
+            document.querySelector('#foot-icons').insertAdjacentHTML('afterbegin', navigation.footer.icons)
+        }
+    }  
 }
