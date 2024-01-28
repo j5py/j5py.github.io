@@ -1,26 +1,37 @@
-run = {
+app.run = {
     init: () => {
-        render.nav.set();
-        render.footer.set();
-        window.onhashchange = run.route;
-        run.route()
+        app.render.nav.set();
+        app.render.footer.set();
+        window.onhashchange = app.run.route;
+        app.run.route()
     },
     route: () => {
-        common.location.moveSearchBeforeHash();
+        app.common.location.moveSearchBeforeHash();
         let i = 0, notFound = 1;
-        if (input.fewPages.length) {
+        if (app.input.fewPages.length) {
             if (location.hash === '') {
-                render.page.set(ready.page.get(input.fewPages[0]), input.fewPages[0].pageTitle);
+                app.render.page.set(
+                    app.press.page.get(app.input.fewPages[0]),
+                    app.input.fewPages[0].pageTitle
+                );
                 notFound = 0;
-            } else while (i < input.fewPages.length) {
-                if (location.hash === common.string.getSlug(input.fewPages[i].pageTitle)) {
-                    render.page.set(ready.page.get(input.fewPages[i]), input.fewPages[i].pageTitle);
+            } else while (i < app.input.fewPages.length) {
+                if (location.hash === app.common.string.getSlug(app.input.fewPages[i].pageTitle)) {
+                    app.render.page.set(
+                        app.press.page.get(app.input.fewPages[i]),
+                        app.input.fewPages[i].pageTitle
+                    );
                     notFound = 0;
                     break
                 } i++
             }
-            if (notFound) render.page.set(model.page.notFound,'404 Not Found')
-        } else render.page.set(model.page.default,'Under Construction')
+            if (notFound) app.render.page.set(
+                app.model.page.notFound,
+                '404 Not Found'
+            )
+        } else app.render.page.set(
+            app.model.page.default,
+            'Under Construction'
+        )
     }
 }
-run.init()

@@ -1,4 +1,4 @@
-common = {
+app.common = {
     location: {
         moveSearchBeforeHash: () => {
             let cut = location.hash.lastIndexOf('?');
@@ -20,11 +20,11 @@ common = {
         }
     },
     string: {
-        getSlug: (x) => {
-            return `#${encodeURI(x.toLowerCase().replace(/\s+((\/|\&)\s)?/g, '-'))}`
+        getSlug: (app) => {
+            return `#${encodeURI(app.toLowerCase().replace(/\s+((\/|\&)\s)?/g, '-'))}`
         },
-        getNoEmptiness: (x) => {
-            return x.replace(/\s{2,}/g, ' ').trim()
+        getSingleSpacedLine: (app) => {
+            return app.replace(/\s{2,}/g, ' ').trim()
         }
     }
 }
