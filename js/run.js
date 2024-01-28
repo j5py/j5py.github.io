@@ -23,4 +23,3 @@ run = {
         } else render.page.set(model.page.default,'Under Construction')
     }
 }
-run.init()

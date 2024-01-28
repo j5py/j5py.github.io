@@ -1,50 +1,32 @@
-boot = {
-    script: {
-        cacheBuster: true,
-        steps: [
-            'common', 'input', 'model', 'ready', 'render', 'run'
-        ],
-        add: (url, cacheBuster, callback) => {
-            let node = document.createElement('script');
-            if (cacheBuster)
-                url += '?' + Math.round(
-                    Math.random() * (new Date()).getTime()
-                );
-            node.setAttribute('src', url);
-            if (callback) node.onload = callback;
-            document.querySelector('body').appendChild(node)
-        },
-        waitLoad: (seconds, checkRequirements, invokeCallback, invokeAnyway) => {
-            let i = 0;
-            const milliseconds = 100
-                , maximum = seconds * 10
-                , check = setInterval(() => {
-                    if (checkRequirements()) {
-                        clearInterval(check);
-                        invokeCallback()
-                    } else if (i >= maximum) {
-                        clearInterval(check);
-                        if (invokeAnyway) invokeCallback()
-                    } else i++
-                  }, milliseconds)
-                ;
-        }
-    },
-    init: (i) => {
-        boot.script.waitLoad(
-            5,
-            () => {
-                return i === 0 ? true : window.hasOwnProperty(boot.script.steps[i - 1])
-            },
-            () => {
-                boot.script.add(
-                    `js/${boot.script.steps[i]}.js`,
-                    boot.script.cacheBuster
-                );
-                if (i < boot.script.steps.length - 1) boot.init(i + 1)
-            },
-            true
-        )
-    }
+function load(name, cacheBuster = true) {
+    return new Promise((resolve, reject) => {
+        const node = document.createElement('script');
+        node.src = 'js/' + name + '.js' + (cacheBuster ? (function(x = 0) {
+            while (x < 0.0001) x = Math.random();
+            return '?' + ((new Date()).getTime() * x).toString().substring(0,8)
+        })() : '');
+        node.onload = () => {
+            const defined = setInterval(() => {
+                if (window[name]) {
+                    clearInterval(defined);
+                    resolve()
+                }
+            }, 1)
+        };
+        node.onerror = reject;
+        document.body.appendChild(node)
+    })
 }
-boot.init(0)
+load('common').then(() => {
+    load('input').then(() => {
+        load('model').then(() => {
+            load('ready').then(() => {
+                load('render').then(() => {
+                    load('run').then(() => {
+                        run.init()
+                    })
+                })
+            })
+        })
+    })
+})
