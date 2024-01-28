@@ -1,4 +1,4 @@
-input = {
+app.input = {
     brand: "j5py",
     fewPages: [
 
