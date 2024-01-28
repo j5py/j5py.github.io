@@ -7,20 +7,21 @@ app.render = {
                     , droppable = document.querySelector('#drop-i-c')
                     ;
                 droppable.insertAdjacentHTML('afterbegin', app.press.nav);
-                document.querySelector('#drop-i').addEventListener('click', () => {
-                    app.common.dom.moveStyleAttribute(droppable, regEx, 1, 'display:block;')
+                document.querySelector('#drop-i').addEventListener(
+                    'click', () => {
+                        app.common.dom.moveStyleAttribute(droppable, regEx, 1, 'display: block;')
                 });
                 document.addEventListener('click', (event) => {
                     if (!event.target.closest('#drop-i'))
-                        app.common.dom.moveStyleAttribute(droppable, regEx, 1, 'display:none;')
+                        app.common.dom.moveStyleAttribute(droppable, regEx, 1, 'display: none;')
                 })
             } else document.querySelector('nav').remove()
         }
     },
     page: {
-        set: (it, title) => {
+        set: (elements, title) => {
             document.title = app.input.brand + ' - ' + title;
-            document.querySelector('#container').innerHTML = it;
+            document.querySelector('#container').innerHTML = elements;
             window.scrollTo(0, 0)
         }
     },
