@@ -23,7 +23,8 @@ app.run = {
                     );
                     notFound = 0;
                     break
-                } i++
+                }
+                i++
             }
             if (notFound) app.render.page.set(
                 app.model.page.notFound,

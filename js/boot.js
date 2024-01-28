@@ -8,9 +8,9 @@ window.app = {
                     return '?' + ((new Date()).getTime() * random).toString().substring(0,8)
                 })() : '');
                 node.onload = () => {
-                    const defined = setInterval(() => {
+                    const definition = setInterval(() => {
                         if (app[name]) {
-                            clearInterval(defined);
+                            clearInterval(definition);
                             resolve()
                         }
                     }, 1)

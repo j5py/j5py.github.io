@@ -20,11 +20,11 @@ app.common = {
         }
     },
     string: {
-        getSlug: (app) => {
-            return `#${encodeURI(app.toLowerCase().replace(/\s+((\/|\&)\s)?/g, '-'))}`
+        getSlug: (title) => {
+            return `#${encodeURI(title.toLowerCase().replace(/\s+((\/|\&)\s)?/g, '-'))}`
         },
-        getSingleSpacedLine: (app) => {
-            return app.replace(/\s{2,}/g, ' ').trim()
+        getSingleSpacedLine: (text) => {
+            return text.replace(/\s{2,}/g, ' ').trim()
         }
     }
 }
