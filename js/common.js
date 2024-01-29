@@ -20,11 +20,41 @@ app.common = {
         }
     },
     string: {
-        getSlug: (title) => {
-            return `#${encodeURI(title.toLowerCase().replace(/\s+((\/|\&)\s)?/g, '-'))}`
-        },
         getSingleSpacedLine: (text) => {
             return text.replace(/\s{2,}/g, ' ').trim()
+        },
+        getSlug: (title, lowercase = true) => {
+            const accents = [
+                        [/à|á|â/g,'a'],
+                        [/À|Á|Â/g,'A'],
+                        [/æ/g,'ae'],
+                        [/Æ/g,'AE'],
+                        [/ç/g,'c'],
+                        [/Ç/g,'C'],
+                        [/è|é|ê|ë/g,'e'],
+                        [/È|É|Ê|Ë/g,'E'],
+                        [/ì|í|î|ï/g,'i'],
+                        [/Ì|Í|Î|Ï/g,'I'],
+                        [/ñ/g,'n'],
+                        [/Ñ/g,'N'],
+                        [/ò|ó|ô/g,'o'],
+                        [/Ò|Ó|Ô/g,'O'],
+                        [/œ/g,'oe'],
+                        [/Œ/g,'OE'],
+                        [/ù|ú|û|ü/g,'u'],
+                        [/Ù|Ú|Û|Ü/g,'U'],
+                        [/ý|ÿ/g,'y'],
+                        [/Ý|Ÿ/g,'Y']
+                    ]
+                , special = '\\\'`"@#$%&~<([{|}])>*+-/=,;:.!?'
+                ;
+            for (let i = 0; i < special.length; i++) {
+                if (title.indexOf(special[i]) > -1)
+                    title = title.replace((new RegExp(`\\${special[i]}`, 'g')), '')
+            }
+            title = title.trim().replace(/\s+/g, '-');
+            accents.forEach(pair => title = title.replace(pair[0], pair[1]));
+            return `#${encodeURI(lowercase ? title.toLowerCase() : title)}`
         }
     }
 }
