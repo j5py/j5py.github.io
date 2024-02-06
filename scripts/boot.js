@@ -3,7 +3,7 @@ window.app = {
         function load(name, cacheBuster = true) {
             return new Promise((resolve, reject) => {
                 const node = document.createElement('script');
-                node.src = 'js/' + name + '.js' + (cacheBuster ? (function(random = 0) {
+                node.src = 'scripts/' + name + '.js' + (cacheBuster ? (function(random = 0) {
                     while (random < 0.0001) random = Math.random();
                     return '?' + ((new Date()).getTime() * random).toString().substring(0,8)
                 })() : '');
