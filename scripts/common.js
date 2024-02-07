@@ -46,14 +46,13 @@ app.common = {
                         [/ý|ÿ/g,'y'],
                         [/Ý|Ÿ/g,'Y']
                     ]
-                , special = '\\\'`"@#$%&~<([{|}])>*+-/=,;:.!?'
                 ;
-            for (let i = 0; i < special.length; i++) {
-                if (title.indexOf(special[i]) > -1)
-                    title = title.replace((new RegExp(`\\${special[i]}`, 'g')), '')
+            for (special of '\\\'`"@#$%&~<([{|}])>*+-/=,;:.!?') {
+                if (title.indexOf(special) > -1)
+                    title = title.replace((new RegExp(`\\${special}`, 'g')), '')
             }
             title = title.trim().replace(/\s+/g, '-');
-            accents.forEach(pair => title = title.replace(pair[0], pair[1]));
+            for (backup of accents) title = title.replace(backup[0], backup[1]);
             return `#${encodeURI(lowercase ? title.toLowerCase() : title)}`
         }
     }
