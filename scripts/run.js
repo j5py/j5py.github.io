@@ -1,9 +1,9 @@
 app.run = {
-    init: () => {
+    init: function() {
         app.render.nav.set();
         app.render.footer.set();
-        window.onhashchange = app.run.route;
-        app.run.route()
+        window.onhashchange = this.route;
+        this.route()
     },
     route: () => {
         if (app.input.fewPages.length) {
