@@ -6,17 +6,15 @@ app.run = {
         app.run.route()
     },
     route: () => {
-        app.common.location.moveSearchBeforeHash();
-        let i = 0, notFound = 1;
         if (app.input.fewPages.length) {
-            if (location.hash === '') {
-                app.render.page.set(
-                    app.press.page.get(app.input.fewPages[0]),
-                    app.input.fewPages[0].pageTitle
-                );
-                notFound = 0;
-            } else while (i < app.input.fewPages.length) {
-                if (location.hash === app.common.string.getSlug(app.input.fewPages[i].pageTitle)) {
+            app.common.location.moveSearchBeforeHash();
+            let has = location.hash === ''
+              , notFound = 1
+              , i = 0
+              ;
+            while (i < app.input.fewPages.length) {
+                if (!has) has = location.hash === app.common.string.getSlug(app.input.fewPages[i].pageTitle);
+                if (has) {
                     app.render.page.set(
                         app.press.page.get(app.input.fewPages[i]),
                         app.input.fewPages[i].pageTitle
