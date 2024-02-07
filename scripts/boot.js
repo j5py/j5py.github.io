@@ -1,36 +1,42 @@
-window.app = {
-    boot: (function() {
-        function load(name, cacheBuster = true) {
+app = {
+    boot: {
+        generator: function* () {
+            yield 'common';
+            yield 'input';
+            yield 'model';
+            yield 'press';
+            yield 'render';
+            yield 'run'
+        },
+        getCacheBuster: () => {
+            const number = (new Date()).getTime()
+                , random = number * Math.random()
+                ;
+            return '?' + String(random).substring(0, 4)
+        },
+        waitScriptPromised: function(name, cache = 0) {
             return new Promise((resolve, reject) => {
-                const node = document.createElement('script');
-                node.src = 'scripts/' + name + '.js' + (cacheBuster ? (function(random = 0) {
-                    while (random < 0.0001) random = Math.random();
-                    return '?' + ((new Date()).getTime() * random).toString().substring(0,8)
-                })() : '');
-                node.onload = () => {
-                    const definition = setInterval(() => {
-                        if (app[name]) {
-                            clearInterval(definition);
+                const script = document.createElement('script');
+                script.src = 'scripts/' + name + '.js' + (cache ? '' : this.getCacheBuster());
+                script.onerror = reject;
+                script.onload = () => {
+                    const execution = setInterval(() => {
+                        if (app.hasOwnProperty(name)) {
+                            clearInterval(execution);
                             resolve()
                         }
-                    }, 1)
+                    }, 10)
                 };
-                node.onerror = reject;
-                document.body.appendChild(node)
+                document.body.appendChild(script)
             })
+        },
+        process: function() {
+            if (!this.init) this.init = this.generator();
+            const walk = this.init.next();
+            if (!walk.done) this.waitScriptPromised(walk.value).then(this.process);
+            else app.run.start()
         }
-        load('common').then(() => {
-            load('input').then(() => {
-                load('model').then(() => {
-                    load('press').then(() => {
-                        load('render').then(() => {
-                            load('run').then(() => {
-                                app.run.init()
-                            })
-                        })
-                    })
-                })
-            })
-        })
-    })()
+    }
 }
+app.boot.process = app.boot.process.bind(app.boot);
+app.boot.process()

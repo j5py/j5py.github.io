@@ -1,5 +1,5 @@
 app.run = {
-    init: function() {
+    start: function() {
         app.render.nav.set();
         app.render.footer.set();
         window.onhashchange = this.route;
