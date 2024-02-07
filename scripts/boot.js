@@ -1,4 +1,4 @@
-app = {
+const app = {
     boot: {
         generator: function* () {
             yield 'common';
@@ -14,7 +14,7 @@ app = {
                 ;
             return '?' + String(random).substring(0, 4)
         },
-        waitScriptPromised: function(name, cache = 0) {
+        getPromisedScript: function(name, cache = 0) {
             return new Promise((resolve, reject) => {
                 const script = document.createElement('script');
                 script.src = 'scripts/' + name + '.js' + (cache ? '' : this.getCacheBuster());
@@ -31,12 +31,12 @@ app = {
             })
         },
         process: function() {
-            if (!this.init) this.init = this.generator();
-            const walk = this.init.next();
-            if (!walk.done) this.waitScriptPromised(walk.value).then(this.process);
+            if (!app.boot.step) app.boot.step = app.boot.generator();
+            const walk = app.boot.step.next();
+            if (!walk.done) app.boot.getPromisedScript(walk.value).then(app.boot.process);
             else app.run.start()
         }
     }
 }
-app.boot.process = app.boot.process.bind(app.boot);
+
 app.boot.process()
