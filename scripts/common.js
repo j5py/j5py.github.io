@@ -11,7 +11,7 @@ app.common = {
                 location.search = search
             }
         },
-        getHash: (string, hash = 1) => {
+        getHash: (string) => {
             const special = '\\\'`"@#$%&~<([{|}])>*+/=,;:.!?'
                 , accents = [
                     [/à|á|â/g,      'a'],
