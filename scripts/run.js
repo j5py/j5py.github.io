@@ -7,14 +7,12 @@ app.run = {
     },
     route: () => {
         if (app.input.fewPages.length) {
-            app.common.location.moveSearchBeforeHash();
-            let has = location.hash === ''
-              , notFound = 1
+            app.common.url.moveSearchBeforeHash();
+            let notFound = 1
               , i = 0
               ;
             while (i < app.input.fewPages.length) {
-                if (!has) has = location.hash === app.common.string.getSlug(app.input.fewPages[i].pageTitle);
-                if (has) {
+                if (!location.hash || location.hash == app.common.url.getHash(app.input.fewPages[i].pageTitle)) {
                     app.render.page.set(
                         app.press.page.get(app.input.fewPages[i]),
                         app.input.fewPages[i].pageTitle

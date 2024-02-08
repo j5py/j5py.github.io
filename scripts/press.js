@@ -2,7 +2,7 @@ app.press = {
     nav: app.input.fewPages.reduce(
         (html, unit) => html + app.model.nav.link
             .replace(/__text__/g, unit.pageTitle)
-            .replace('__href__', app.common.string.getSlug(unit.pageTitle))
+            .replace('__href__', app.common.url.getHash(unit.pageTitle))
         ,
         ''
     ),
