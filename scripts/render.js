@@ -1,34 +1,51 @@
 app.render = {
     nav: {
         set: () => {
-            document.querySelector('header h1').innerHTML = app.input.brand;
             if (app.press.nav) {
-                const regEx = /display\:\s*\w+\s*(!important)*;/g
-                    , droppable = document.querySelector('#drop-i-c')
+                document.querySelector('header h1')
+                    .innerHTML = app.input.brand
                     ;
-                droppable.insertAdjacentHTML('afterbegin', app.press.nav);
-                document.querySelector('#drop-i').addEventListener(
-                    'click', () => {
-                        app.common.dom.moveStyleAttribute(droppable, regEx, 1, 'display: block;')
-                });
-                document.addEventListener('click', (event) => {
-                    if (!event.target.closest('#drop-i'))
-                        app.common.dom.moveStyleAttribute(droppable, regEx, 1, 'display: none;')
-                })
-            } else document.querySelector('nav').remove()
+                const button = document.querySelector('#drop-i')
+                    , droppable = document.querySelector('#drop-i-c')
+                    , shift = /display\:\s*\w+\s*(!important)*;/g
+                    , page = document.querySelector('#container')
+                    ;
+                droppable.insertAdjacentHTML(
+                    'afterbegin', app.press.nav
+                );
+                function onButton() {
+                    button.removeEventListener('click', onButton);
+                    app.common.dom.moveStyleAttribute(droppable, shift, 1, 'display: block;')
+                    droppable.addEventListener('click', onOthers);
+                    page.addEventListener('click', onOthers)
+                }
+                function onOthers() {
+                    page.removeEventListener('click', onOthers);
+                    droppable.removeEventListener('click', onOthers);
+                    app.common.dom.moveStyleAttribute(droppable, shift, 1, 'display: none;');
+                    button.addEventListener('click', onButton)
+                }
+                button.addEventListener('click', onButton)
+            }
+            else document.querySelector('nav').remove()
         }
     },
     page: {
-        set: (elements, title) => {
+        set: (html, title) => {
             document.title = app.input.brand + ' - ' + title;
-            document.querySelector('#container').innerHTML = elements;
+            document.querySelector('#container').innerHTML = html;
             window.scrollTo(0, 0)
         }
     },
     footer: {
         set: () => {
-            document.querySelector('#foot-texts').insertAdjacentHTML('afterbegin', app.press.footer.links);
-            document.querySelector('#foot-icons').insertAdjacentHTML('afterbegin', app.press.footer.icons)
+            const areas = [
+                ['#foot-texts', app.press.footer.links],
+                ['#foot-icons', app.press.footer.icons]
+            ];
+            for (unit of areas) {
+                document.querySelector(unit[0]).insertAdjacentHTML('afterbegin', unit[1])
+            }
         }
     }  
 }
