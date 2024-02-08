@@ -12,32 +12,23 @@ app.common = {
             }
         },
         getHash: (string) => {
-            const special = '\\\'`"@#$%&~<([{|}])>*+/=,;:.!?'
+            const special = '\\\'`"@#$%&~<([{|}])>*+-/=,;:.!?'
                 , accents = [
                     [/à|á|â/g,      'a'],
-                    [/À|Á|Â/g,      'A'],
                     [/æ/g,          'ae'],
-                    [/Æ/g,          'AE'],
                     [/ç/g,          'c'],
-                    [/Ç/g,          'C'],
                     [/è|é|ê|ë/g,    'e'],
-                    [/È|É|Ê|Ë/g,    'E'],
                     [/ì|í|î|ï/g,    'i'],
-                    [/Ì|Í|Î|Ï/g,    'I'],
                     [/ñ/g,          'n'],
-                    [/Ñ/g,          'N'],
                     [/ò|ó|ô/g,      'o'],
-                    [/Ò|Ó|Ô/g,      'O'],
                     [/œ/g,          'oe'],
-                    [/Œ/g,          'OE'],
                     [/ù|ú|û|ü/g,    'u'],
-                    [/Ù|Ú|Û|Ü/g,    'U'],
                     [/ý|ÿ/g,        'y'],
-                    [/Ý|Ÿ/g,        'Y']
                 ];
+            string = string.toLowerCase();
             for (unit of special) string = string.replace((new RegExp(`\\${unit}`, 'g')), '');
             for (unit of accents) string = string.replace(unit[0], unit[1]);
-            return '#' + encodeURI(string.trim().replace(/\s+/g, '-').toLowerCase())
+            return '#' + encodeURI(string.trim().replace(/\s+/g, '-')) 
         }
     },
     string: {
