@@ -31,12 +31,12 @@
             {
                 "alt": "GitHub profile",
                 "href": "https://github.com/j5py",
-                "src": "images/iconmonstr-github.png"
+                "src": "icons/iconmonstr-github.png"
             },
             {
                 "alt": "LinkedIn profile",
                 "href": "https://www.linkedin.com/in/sdmm",
-                "src": "images/iconmonstr-linkedin.png"
+                "src": "icons/iconmonstr-linkedin.png"
             }
         ]
     }
