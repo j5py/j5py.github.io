@@ -37,9 +37,9 @@ app.common = {
         }
     },
     dom: {
-        moveStyleAttribute: (node, removeStringRegex, addStringCondition, stringToAdd) => {
-            const css = (node.getAttribute('style') || '').replace(removeStringRegex, '').trim();
-            if (addStringCondition) node.setAttribute('style', (css.length ? css + ' ' : css) + stringToAdd);
+        moveStyleAttribute: (node, removeRegEx, addBoolean, addString) => {
+            const css = (node.getAttribute('style') || '').replace(removeRegEx, '').trim();
+            if (addBoolean) node.setAttribute('style', (css.length ? css + ' ' : css) + addString);
             else node.setAttribute('style', css)
         }
     }
