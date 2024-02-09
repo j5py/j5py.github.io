@@ -1,0 +1,34 @@
+{
+    "websiteName": "",
+    "fewPages": [
+        {
+            "pageTitle": "",
+            "unlimitedCards": [
+                {
+                    "cardHeader": "",
+                    "sixLinksMax": [
+                        {
+                            "text": "",
+                            "href": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "footer": {
+        "fewLinks": [
+            {
+                "text": "",
+                "href": ""
+            }
+        ],
+        "fewIcons": [
+            {
+                "alt": "",
+                "href": "",
+                "src": ""
+            }
+        ]
+    }
+}
