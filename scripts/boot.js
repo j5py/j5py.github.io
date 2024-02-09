@@ -2,7 +2,7 @@ const app = {
     boot: {
         generator: function* () {
             yield 'common';
-            yield 'input';
+            yield 'material';
             yield 'model';
             yield 'press';
             yield 'render';

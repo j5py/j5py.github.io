@@ -1,5 +1,5 @@
 app.press = {
-    nav: app.input.fewPages.reduce(
+    nav: app.material.pages.reduce(
         (html, unit) => html + app.model.nav.link
             .replace(/__text__/g, unit.pageTitle)
             .replace('__href__', app.common.url.getHash(unit.pageTitle))
@@ -7,13 +7,13 @@ app.press = {
         ''
     ),
     page: {
-        get: (subject) => {
+        get: (data) => {
             return app.model.page.section
-                .replace('__title__', subject.pageTitle)
-                .replace('__cards__', subject.unlimitedCards.reduce(
+                .replace('__title__', data.pageTitle)
+                .replace('__cards__', data.cards.reduce(
                     (html, unit) => html + app.model.page.card.header
                         .replace('__header__', unit.cardHeader)
-                        .replace('__links__', unit.sixLinksMax.reduce(
+                        .replace('__links__', unit.links.reduce(
                             (subHtml, subunit) => subHtml + app.model.page.card.link
                                 .replace('__text__', subunit.text)
                                 .replace('__href__', subunit.href)
@@ -27,7 +27,7 @@ app.press = {
         }
     },
     footer: {
-        links: app.input.footer.fewLinks.reduce(
+        links: app.material.footer.links.reduce(
             (html, unit) => html + app.model.footer.link
                 .replace(/__text__/g, unit.text)
                 .replace('__onclick__', unit.onclick ? `onclick="${unit.onclick}"` : '')
@@ -36,7 +36,7 @@ app.press = {
             ,
             ''
         ),
-        icons: app.input.footer.fewIcons.reduce(
+        icons: app.material.footer.icons.reduce(
             (html, unit) => html + app.model.footer.icon
                 .replace(/__alt__/g, unit.alt)
                 .replace('__href__', unit.href)
