@@ -1,12 +1,12 @@
 {
     "websiteName": "",
-    "fewPages": [
+    "pages": [
         {
             "pageTitle": "",
-            "unlimitedCards": [
+            "cards": [
                 {
                     "cardHeader": "",
-                    "sixLinksMax": [
+                    "links": [
                         {
                             "text": "",
                             "href": ""
@@ -17,13 +17,13 @@
         }
     ],
     "footer": {
-        "fewLinks": [
+        "links": [
             {
                 "text": "",
                 "href": ""
             }
         ],
-        "fewIcons": [
+        "icons": [
             {
                 "alt": "",
                 "href": "",
