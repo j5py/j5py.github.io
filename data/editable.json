@@ -1,0 +1,34 @@
+{
+    "websiteName": "",
+    "pages": [
+        {
+            "pageTitle": "",
+            "cards": [
+                {
+                    "cardHeader": "",
+                    "links": [
+                        {
+                            "text": "",
+                            "href": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "footer": {
+        "links": [
+            {
+                "text": "",
+                "href": ""
+            }
+        ],
+        "icons": [
+            {
+                "alt": "",
+                "href": "",
+                "src": ""
+            }
+        ]
+    }
+}

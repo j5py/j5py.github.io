@@ -1,21 +1,32 @@
 app.run = {
     start: function() {
-        app.render.nav.set();
+        const none = !app.material.set
+            , lone = app.material.pages.length < 2
+            ;
+        if (none || lone) {
+            app.render.nav.end()
+        } else {
+            app.render.nav.set();
+            window.onhashchange = this.route
+        }
         app.render.footer.set();
-        window.onhashchange = this.route;
         this.route()
     },
     route: () => {
-        if (app.input.fewPages.length) {
+        if (app.material.set) {
             app.common.url.moveSearchBeforeHash();
             let notFound = 1
               , i = 0
               ;
-            while (i < app.input.fewPages.length) {
-                if (!location.hash || location.hash == app.common.url.getHash(app.input.fewPages[i].pageTitle)) {
+            while (i < app.material.pages.length) {
+                const root = !location.hash
+                    , hash = location.hash == app.common.url.getHash(app.material.pages[i].pageTitle)
+                    , name = app.material.pages[i].pageTitle.length
+                    ;
+                if ((root || hash) && name) {
                     app.render.page.set(
-                        app.press.page.get(app.input.fewPages[i]),
-                        app.input.fewPages[i].pageTitle
+                        app.press.page.get(app.material.pages[i]),
+                        app.material.pages[i].pageTitle
                     );
                     notFound = 0;
                     break
