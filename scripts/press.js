@@ -1,7 +1,7 @@
 app.press = {
     nav: app.material.pages.reduce(
         (html, unit) => html + app.model.nav.link
-            .replace(/__text__/g, unit.pageTitle)
+            .replace('__text__', unit.pageTitle)
             .replace('__href__', app.common.url.getHash(unit.pageTitle))
         ,
         ''
@@ -29,7 +29,7 @@ app.press = {
     footer: {
         links: app.material.footer.links.reduce(
             (html, unit) => html + app.model.footer.link
-                .replace(/__text__/g, unit.text)
+                .replace('__text__', unit.text)
                 .replace('__onclick__', unit.onclick ? `onclick="${unit.onclick}"` : '')
                 .replace('__target__', unit.onclick ? '' : 'target="_blank"')
                 .replace('__href__', unit.onclick ? '' : `href="${unit.href}"`)
@@ -38,7 +38,7 @@ app.press = {
         ),
         icons: app.material.footer.icons.reduce(
             (html, unit) => html + app.model.footer.icon
-                .replace(/__alt__/g, unit.alt)
+                .replace('__alt__', unit.alt)
                 .replace('__href__', unit.href)
                 .replace('__src__', unit.src)
             ,
