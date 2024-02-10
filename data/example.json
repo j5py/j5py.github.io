@@ -1,15 +1,246 @@
 {
-    "websiteName": "",
+    "websiteName": "j5py",
     "pages": [
         {
-            "pageTitle": "",
+            "pageTitle": "Editing",
             "cards": [
                 {
-                    "cardHeader": "",
+                    "cardHeader": "DVCS",
                     "links": [
                         {
-                            "text": "",
-                            "href": ""
+                            "text": "Git",
+                            "href": "https://git-scm.com/"
+                        },
+                        {
+                            "text": "GitHub",
+                            "href": "https://github.com/"
+                        },
+                        {
+                            "text": "GitLab",
+                            "href": "https://about.gitlab.com/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": ".md",
+                    "links": [
+                        {
+                            "text": "Markdown Syntax",
+                            "href": "https://daringfireball.net/projects/markdown/syntax"
+                        },
+                        {
+                            "text": "GitHub Flavored",
+                            "href": "https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "IDE",
+                    "links": [
+                        {
+                            "text": "Visual Studio Code",
+                            "href": "https://code.visualstudio.com/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pageTitle": "Programming",
+            "cards": [
+                {
+                    "cardHeader": "Quick Reference",
+                    "links": [
+                        {
+                            "text": "MDN Web Docs",
+                            "href": "https://developer.mozilla.org/"
+                        },
+                        {
+                            "text": "W3Schools",
+                            "href": "https://www.w3schools.com/"
+                        },
+                        {
+                            "text": "Guru99",
+                            "href": "https://www.guru99.com/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Language",
+                    "links": [
+                        {
+                            "text": "CNRTL",
+                            "href": "https://www.cnrtl.fr/"
+                        },
+                        {
+                            "text": "Thesaurus.com",
+                            "href": "https://www.thesaurus.com/
+"
+                        },
+                        {
+                            "text": "Dictionary.com",
+                            "href": "https://www.dictionary.com/"
+                        },
+                        {
+                            "text": "Google Translate",
+                            "href": "https://translate.google.com"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Tutorials",
+                    "links": [
+                        {
+                            "text": "Shell",
+                            "href": "https://www.shellscript.sh/"
+                        },
+                        {
+                            "text": "SQL",
+                            "href": "https://www.sqltutorial.org/"
+                        },
+                        {
+                            "text": "REST",
+                            "href": "https://restfulapi.net/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pageTitle": "JavaScript",
+            "cards": [
+                {
+                    "cardHeader": "Book",
+                    "links": [
+                        {
+                            "text": "Eloquent JavaScript",
+                            "href": "https://eloquentjavascript.net/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "ECMAScript",
+                    "links": [
+                        {
+                            "text": "Language Specification",
+                            "href": "https://tc39.es/ecma262/"
+                        },
+                        {
+                            "text": "API Specification",
+                            "href": "https://tc39.es/ecma402/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Debug",
+                    "links": [
+                        {
+                            "text": "Chrome DevTools",
+                            "href": "https://developer.chrome.com/docs/devtools"
+                        },
+                        {
+                            "text": "Firefox DevTools",
+                            "href": "https://firefox-source-docs.mozilla.org/devtools-user/index.html"
+                        },
+                        {
+                            "text": "Safari Web Inspector",
+                            "href": "https://webkit.org/web-inspector/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Runtime",
+                    "links": [
+                        {
+                            "text": "Node.js",
+                            "href": "https://nodejs.org/"
+                        },
+                        {
+                            "text": "npm",
+                            "href": "https://www.npmjs.com/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pageTitle": "Python",
+            "cards": [
+                {
+                    "cardHeader": "Python",
+                    "links": [
+                        {
+                            "text": "Python",
+                            "href": "https://www.python.org/"
+                        },
+                        {
+                            "text": "PY4E",
+                            "href": "https://www.py4e.com"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pageTitle": "Further",
+            "cards": [
+                {
+                    "cardHeader": "Standards",
+                    "links": [
+                        {
+                            "text": "W3C",
+                            "href": "https://www.w3.org/"
+                        },
+                        {
+                            "text": "IANA",
+                            "href": "https://www.iana.org/"
+                        },
+                        {
+                            "text": "IETF",
+                            "href": "https://www.ietf.org/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Networks",
+                    "links": [
+                        {
+                            "text": "Introduction to Networks",
+                            "href": "https://intronetworks.cs.luc.edu/"
+                        },
+                        {
+                            "text": "Masque IPv4 et IPv6",
+                            "href": "https://cric.grenoble.cnrs.fr/Administrateurs/Outils/CalculMasque/"
+                        },
+                        {
+                            "text": "Table des puissances",
+                            "href": "https://fr.onlinemschool.com/math/formula/order_table/"
+                        },
+                        {
+                            "text": "checkip (AWS)",
+                            "href": "https://checkip.amazonaws.com"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Characters",
+                    "links": [
+                        {
+                            "text": "ASCII Table",
+                            "href": "https://www.asciitable.com"
+                        },
+                        {
+                            "text": "Unicode",
+                            "href": "https://www.unicode.org/main.html"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Regex",
+                    "links": [
+                        {
+                            "text": "101",
+                            "href": "https://regex101.com"
                         }
                     ]
                 }
@@ -19,15 +250,24 @@
     "footer": {
         "links": [
             {
-                "text": "",
-                "href": ""
+                "text": "Hosted on GitHub Pages",
+                "href": "https://pages.github.com"
+            },
+            {
+                "text": "I like this link",
+                "onclick": "alert('I knew it!')"
             }
         ],
         "icons": [
             {
-                "alt": "",
-                "href": "",
-                "src": ""
+                "alt": "GitHub profile",
+                "href": "https://github.com/j5py",
+                "src": "icons/iconmonstr-github.png"
+            },
+            {
+                "alt": "LinkedIn profile",
+                "href": "https://www.linkedin.com/in/sdmm",
+                "src": "icons/iconmonstr-linkedin.png"
             }
         ]
     }
