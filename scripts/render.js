@@ -39,7 +39,7 @@ app.render = {
                 ['#foot-texts', app.press.footer.links],
                 ['#foot-icons', app.press.footer.icons]
             ];
-            for (unit of areas) {
+            for (const unit of areas) {
                 document.querySelector(unit[0]).insertAdjacentHTML('afterbegin', unit[1])
             }
         }

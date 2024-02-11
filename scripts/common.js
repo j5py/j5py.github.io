@@ -27,8 +27,8 @@ app.common = {
                             ]
                 ;
             string = string.toLowerCase();
-            for (unit of special) string = string.replace((new RegExp(`\\${unit}`, 'g')), '');
-            for (unit of accents) string = string.replace(unit[0], unit[1]);
+            for (const unit of special) string = string.replace((new RegExp(`\\${unit}`, 'g')), '');
+            for (const unit of accents) string = string.replace(unit[0], unit[1]);
             return '#' + encodeURI(string.trim().replace(/\s+/g, '-')) 
         }
     },

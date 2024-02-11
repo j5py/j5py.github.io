@@ -16,7 +16,7 @@
             else if (Array.isArray(unit)) {
                 if (unit.filter((subunit) => isFilled(subunit)).length) return 1
             } else {
-                for (subunit of Object.values(unit)) {
+                for (const subunit of Object.values(unit)) {
                     if (isFilled(subunit)) return 1
                 }
             }
@@ -25,7 +25,7 @@
         }
     }
     let data;
-    for (file of endpoints) {
+    for (const file of endpoints) {
         data = await request(file);
         if (isFilled(data)) {
             data.set = 1;
