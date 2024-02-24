@@ -3,11 +3,6 @@
         '../data/editable.json',
         '../data/example.json'
     ];
-    async function request(endpoint) {
-        const response = await fetch(endpoint);
-        const js = await response.json();
-        return js
-    }
     function isFilled(unit) {
         try {
             if (typeof unit == 'string' && unit.length) return 1;
@@ -23,6 +18,17 @@
         } catch (error) {
             console.log(error)
         }
+    }
+    function getCacheBuster(length = 8) {
+        const number = (new Date()).getTime()
+            , random = number * Math.random()
+            ;
+        return '?' + String(random).substring(0, length)
+    }
+    async function request(endpoint, cache = 0) {
+        const response = await fetch(endpoint + (cache ? '' : getCacheBuster()));
+        const js = await response.json();
+        return js
     }
     let data;
     for (const file of endpoints) {
