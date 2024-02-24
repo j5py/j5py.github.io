@@ -8,16 +8,10 @@ const app = {
             yield 'render';
             yield 'run'
         },
-        getCacheBuster: () => {
-            const number = (new Date()).getTime()
-                , random = number * Math.random()
-                ;
-            return '?' + String(random).substring(0, 4)
-        },
-        getPromisedScript: function(name, cache = 0) {
+        getPromisedScript: (name) => {
             return new Promise((resolve, reject) => {
                 const script = document.createElement('script');
-                script.src = 'scripts/' + name + '.js' + (cache ? '' : this.getCacheBuster());
+                script.src = 'scripts/' + name + '.js';
                 script.onerror = reject;
                 script.onload = () => {
                     const execution = setInterval(() => {
