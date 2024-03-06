@@ -73,33 +73,24 @@
                             "href": "https://www.cnrtl.fr/"
                         },
                         {
-                            "text": "Thesaurus.com",
-                            "href": "https://www.thesaurus.com/"
+                            "text": "Wiktionary",
+                            "href": "https://www.wiktionary.org/"
                         },
                         {
                             "text": "Dictionary.com",
                             "href": "https://www.dictionary.com/"
                         },
                         {
+                            "text": "Thesaurus.com",
+                            "href": "https://www.thesaurus.com/"
+                        },
+                        {
                             "text": "Google Translate",
                             "href": "https://translate.google.com"
-                        }
-                    ]
-                },
-                {
-                    "cardHeader": "Tutorials",
-                    "links": [
-                        {
-                            "text": "Shell",
-                            "href": "https://www.shellscript.sh/"
                         },
                         {
-                            "text": "SQL",
-                            "href": "https://www.sqltutorial.org/"
-                        },
-                        {
-                            "text": "REST",
-                            "href": "https://restfulapi.net/"
+                            "text": "Wikipedia",
+                            "href": "https://www.wikipedia.org/"
                         }
                     ]
                 }
@@ -109,16 +100,24 @@
             "pageTitle": "JavaScript",
             "cards": [
                 {
-                    "cardHeader": "Book",
+                    "cardHeader": "References",
                     "links": [
                         {
-                            "text": "Eloquent JavaScript",
+                            "text": "MDN",
+                            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                        },
+                        {
+                            "text": "Eloquent",
                             "href": "https://eloquentjavascript.net/"
+                        },
+                        {
+                            "text": "W3Schools",
+                            "href": "https://www.w3schools.com/js/default.asp"
                         }
                     ]
                 },
                 {
-                    "cardHeader": "ECMAScript",
+                    "cardHeader": "Standards",
                     "links": [
                         {
                             "text": "Language Specification",
@@ -148,6 +147,52 @@
                     ]
                 },
                 {
+                    "cardHeader": "Optimization",
+                    "links": [
+                        {
+                            "text": "webpack",
+                            "href": "https://webpack.js.org/"
+                        },
+                        {
+                            "text": "Pingdom",
+                            "href": "https://tools.pingdom.com/"
+                        },
+                        {
+                            "text": "PageSpeed Insights",
+                            "href": "https://pagespeed.web.dev/"
+                        },
+                        {
+                            "text": "Google Search Console",
+                            "href": "https://search.google.com/search-console/about"
+                        },
+                        {
+                            "text": "WAVE Accessibility",
+                            "href": "https://wave.webaim.org/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Testing",
+                    "links": [
+                        {
+                            "text": "Jasmine",
+                            "href": "https://jasmine.github.io/"
+                        },
+                        {
+                            "text": "Mocha",
+                            "href": "https://mochajs.org/"
+                        },
+                        {
+                            "text": "Cypress",
+                            "href": "https://www.cypress.io/"
+                        },
+                        {
+                            "text": "Puppeteer",
+                            "href": "https://pptr.dev/"
+                        }
+                    ]
+                },
+                {
                     "cardHeader": "Runtime",
                     "links": [
                         {
@@ -157,6 +202,27 @@
                         {
                             "text": "npm",
                             "href": "https://www.npmjs.com/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Back-end",
+                    "links": [
+                        {
+                            "text": "Express",
+                            "href": "https://expressjs.com/"
+                        },
+                        {
+                            "text": "Koa",
+                            "href": "https://koajs.com/"
+                        },
+                        {
+                            "text": "hapi",
+                            "href": "https://hapi.dev/"
+                        },
+                        {
+                            "text": "Socket.IO",
+                            "href": "https://socket.io/"
                         }
                     ]
                 }
@@ -240,6 +306,23 @@
                         {
                             "text": "101",
                             "href": "https://regex101.com"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Tutorials",
+                    "links": [
+                        {
+                            "text": "Shell",
+                            "href": "https://www.shellscript.sh/"
+                        },
+                        {
+                            "text": "SQL",
+                            "href": "https://www.sqltutorial.org/"
+                        },
+                        {
+                            "text": "REST",
+                            "href": "https://restfulapi.net/"
                         }
                     ]
                 }
