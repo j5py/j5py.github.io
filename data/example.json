@@ -247,6 +247,33 @@
             ]
         },
         {
+            "pageTitle": "Data",
+            "cards": [
+                {
+                    "cardHeader": "Database",
+                    "links": [
+                        {
+                            "text": "MongoDB",
+                            "href": "https://www.mongodb.com/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Tutorials",
+                    "links": [
+                        {
+                            "text": "SQL",
+                            "href": "https://www.sqltutorial.org/"
+                        },
+                        {
+                            "text": "REST",
+                            "href": "https://restfulapi.net/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "pageTitle": "Further",
             "cards": [
                 {
@@ -315,14 +342,6 @@
                         {
                             "text": "Shell",
                             "href": "https://www.shellscript.sh/"
-                        },
-                        {
-                            "text": "SQL",
-                            "href": "https://www.sqltutorial.org/"
-                        },
-                        {
-                            "text": "REST",
-                            "href": "https://restfulapi.net/"
                         }
                     ]
                 }
