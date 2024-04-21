@@ -2,50 +2,6 @@
     "websiteName": "j5py",
     "pages": [
         {
-            "pageTitle": "Editing",
-            "cards": [
-                {
-                    "cardHeader": "DVCS",
-                    "links": [
-                        {
-                            "text": "Git",
-                            "href": "https://git-scm.com/"
-                        },
-                        {
-                            "text": "GitHub",
-                            "href": "https://github.com/"
-                        },
-                        {
-                            "text": "GitLab",
-                            "href": "https://about.gitlab.com/"
-                        }
-                    ]
-                },
-                {
-                    "cardHeader": ".md",
-                    "links": [
-                        {
-                            "text": "Markdown Syntax",
-                            "href": "https://daringfireball.net/projects/markdown/syntax"
-                        },
-                        {
-                            "text": "GitHub Flavored",
-                            "href": "https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax"
-                        }
-                    ]
-                },
-                {
-                    "cardHeader": "IDE",
-                    "links": [
-                        {
-                            "text": "Visual Studio Code",
-                            "href": "https://code.visualstudio.com/"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "pageTitle": "Containerization",
             "cards": [
                 {
@@ -93,8 +49,59 @@
             ]
         },
         {
-            "pageTitle": "Programming",
+            "pageTitle": "Development",
             "cards": [
+                {
+                    "cardHeader": "DVCS",
+                    "links": [
+                        {
+                            "text": "Git",
+                            "href": "https://git-scm.com/"
+                        },
+                        {
+                            "text": "GitHub",
+                            "href": "https://github.com/"
+                        },
+                        {
+                            "text": "GitLab",
+                            "href": "https://about.gitlab.com/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": ".md",
+                    "links": [
+                        {
+                            "text": "Markdown Syntax",
+                            "href": "https://daringfireball.net/projects/markdown/syntax"
+                        },
+                        {
+                            "text": "GitHub Flavored",
+                            "href": "https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "IDE",
+                    "links": [
+                        {
+                            "text": "Visual Studio Code",
+                            "href": "https://code.visualstudio.com/"
+                        },
+                        {
+                            "text": "VSC macOS Shortcuts",
+                            "href": "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf"
+                        },
+                        {
+                            "text": "VSC Windows Shortcuts",
+                            "href": "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf"
+                        },
+                        {
+                            "text": "vscode.dev",
+                            "href": "https://vscode.dev/"
+                        }
+                    ]
+                },
                 {
                     "cardHeader": "Quick Reference",
                     "links": [
@@ -194,32 +201,62 @@
                     ]
                 },
                 {
-                    "cardHeader": "Optimization",
+                    "cardHeader": "Back-end",
                     "links": [
                         {
-                            "text": "webpack",
-                            "href": "https://webpack.js.org/"
+                            "text": "Express",
+                            "href": "https://expressjs.com/"
                         },
                         {
-                            "text": "Pingdom",
-                            "href": "https://tools.pingdom.com/"
+                            "text": "Koa",
+                            "href": "https://koajs.com/"
                         },
                         {
-                            "text": "PageSpeed Insights",
-                            "href": "https://pagespeed.web.dev/"
+                            "text": "hapi",
+                            "href": "https://hapi.dev/"
                         },
                         {
-                            "text": "Google Search Console",
-                            "href": "https://search.google.com/search-console/about"
-                        },
-                        {
-                            "text": "WAVE Accessibility",
-                            "href": "https://wave.webaim.org/"
+                            "text": "Socket.IO",
+                            "href": "https://socket.io/"
                         }
                     ]
                 },
                 {
-                    "cardHeader": "Testing",
+                    "cardHeader": "Runtime",
+                    "links": [
+                        {
+                            "text": "nvm",
+                            "href": "https://github.com/nvm-sh/nvm"
+                        },
+                        {
+                            "text": "nvm-windows",
+                            "href": "https://github.com/coreybutler/nvm-windows"
+                        },
+                        {
+                            "text": "Node.js",
+                            "href": "https://nodejs.org/"
+                        },
+                        {
+                            "text": "npm",
+                            "href": "https://www.npmjs.com/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Build Tools",
+                    "links": [
+                        {
+                            "text": "Babel",
+                            "href": "https://babeljs.io/"
+                        },
+                        {
+                            "text": "webpack",
+                            "href": "https://webpack.js.org/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Test Tools",
                     "links": [
                         {
                             "text": "Jasmine",
@@ -240,36 +277,23 @@
                     ]
                 },
                 {
-                    "cardHeader": "Runtime",
+                    "cardHeader": "Optimization",
                     "links": [
                         {
-                            "text": "Node.js",
-                            "href": "https://nodejs.org/"
+                            "text": "Pingdom",
+                            "href": "https://tools.pingdom.com/"
                         },
                         {
-                            "text": "npm",
-                            "href": "https://www.npmjs.com/"
-                        }
-                    ]
-                },
-                {
-                    "cardHeader": "Back-end",
-                    "links": [
-                        {
-                            "text": "Express",
-                            "href": "https://expressjs.com/"
+                            "text": "PageSpeed Insights",
+                            "href": "https://pagespeed.web.dev/"
                         },
                         {
-                            "text": "Koa",
-                            "href": "https://koajs.com/"
+                            "text": "Google Search Console",
+                            "href": "https://search.google.com/search-console/about"
                         },
                         {
-                            "text": "hapi",
-                            "href": "https://hapi.dev/"
-                        },
-                        {
-                            "text": "Socket.IO",
-                            "href": "https://socket.io/"
+                            "text": "WAVE Accessibility",
+                            "href": "https://wave.webaim.org/"
                         }
                     ]
                 }
@@ -321,7 +345,29 @@
             ]
         },
         {
-            "pageTitle": "Further",
+            "pageTitle": "Content",
+            "cards": [
+                {
+                    "cardHeader": "Visuals",
+                    "links": [
+                        {
+                            "text": "iconmonstr",
+                            "href": "https://iconmonstr.com/"
+                        },
+                        {
+                            "text": "Lorem Picsum",
+                            "href": "https://picsum.photos/"
+                        },
+                        {
+                            "text": "Unsplash",
+                            "href": "https://unsplash.com/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pageTitle": "Resources",
             "cards": [
                 {
                     "cardHeader": "Standards",
@@ -387,8 +433,12 @@
                     "cardHeader": "Tutorials",
                     "links": [
                         {
-                            "text": "Shell",
+                            "text": "Shell Scripting",
                             "href": "https://www.shellscript.sh/"
+                        },
+                        {
+                            "text": "Microsoft",
+                            "href": "https://learn.microsoft.com"
                         }
                     ]
                 }
