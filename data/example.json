@@ -131,16 +131,16 @@
                             "href": "https://www.wiktionary.org/"
                         },
                         {
-                            "text": "Dictionary.com",
-                            "href": "https://www.dictionary.com/"
-                        },
-                        {
-                            "text": "Thesaurus.com",
-                            "href": "https://www.thesaurus.com/"
+                            "text": "Cambridge Dictionary",
+                            "href": "https://dictionary.cambridge.org/"
                         },
                         {
                             "text": "Google Translate",
                             "href": "https://translate.google.com"
+                        },
+                        {
+                            "text": "Thesaurus.com",
+                            "href": "https://www.thesaurus.com/"
                         },
                         {
                             "text": "Wikipedia",
