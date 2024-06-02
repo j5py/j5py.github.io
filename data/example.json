@@ -110,6 +110,10 @@
                             "href": "https://developer.mozilla.org/"
                         },
                         {
+                            "text": "CSS-Tricks",
+                            "href": "https://css-tricks.com/"
+                        },
+                        {
                             "text": "W3Schools",
                             "href": "https://www.w3schools.com/"
                         },
@@ -127,8 +131,8 @@
                             "href": "https://www.cnrtl.fr/"
                         },
                         {
-                            "text": "Wiktionary",
-                            "href": "https://www.wiktionary.org/"
+                            "text": "vatefaireconjuguer",
+                            "href": "https://www.gymglish.com/fr/conjugaison/vatefaireconjuguer"
                         },
                         {
                             "text": "Cambridge Dictionary",
@@ -143,8 +147,8 @@
                             "href": "https://www.thesaurus.com/"
                         },
                         {
-                            "text": "Wikipedia",
-                            "href": "https://www.wikipedia.org/"
+                            "text": "Wiktionary",
+                            "href": "https://www.wiktionary.org/"
                         }
                     ]
                 }
@@ -197,6 +201,61 @@
                         {
                             "text": "Safari Web Inspector",
                             "href": "https://webkit.org/web-inspector/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "React (Dev)",
+                    "links": [
+                        {
+                            "text": "Learn React",
+                            "href": "https://react.dev/"
+                        },
+                        {
+                            "text": "Create React App",
+                            "href": "https://create-react-app.dev/"
+                        },
+                        {
+                            "text": "React Router",
+                            "href": "https://reactrouter.com/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "React (State)",
+                    "links": [
+                        {
+                            "text": "React Redux",
+                            "href": "https://react-redux.js.org/"
+                        },
+                        {
+                            "text": "React testing library",
+                            "href": "https://testing-library.com/docs/react-testing-library"
+                        },
+                        {
+                            "text": "Jest",
+                            "href": "https://jestjs.io/docs/getting-started"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "React (UI)",
+                    "links": [
+                        {
+                            "text": "Chakra UI",
+                            "href": "https://v2.chakra-ui.com/"
+                        },
+                        {
+                            "text": "Formik",
+                            "href": "https://formik.org/"
+                        },
+                        {
+                            "text": "React Hook Form",
+                            "href": "https://react-hook-form.com/"
+                        },
+                        {
+                            "text": "ReactPlayer Demo",
+                            "href": "https://cookpete.github.io/react-player/"
                         }
                     ]
                 },
@@ -361,6 +420,15 @@
                         {
                             "text": "Unsplash",
                             "href": "https://unsplash.com/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Sample Data",
+                    "links": [
+                        {
+                            "text": "Random User Generator",
+                            "href": "https://randomuser.me/"
                         }
                     ]
                 }
