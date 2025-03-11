@@ -2,6 +2,133 @@
     "websiteName": "j5py",
     "pages": [
         {
+            "pageTitle": "Development",
+            "cards": [
+                {
+                    "cardHeader": "DVCS",
+                    "links": [
+                        {
+                            "text": "Git",
+                            "href": "https://git-scm.com/"
+                        },
+                        {
+                            "text": "GitHub",
+                            "href": "https://github.com/"
+                        },
+                        {
+                            "text": "GitLab",
+                            "href": "https://about.gitlab.com/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": ".md",
+                    "links": [
+                        {
+                            "text": "Markdown Syntax",
+                            "href": "https://daringfireball.net/projects/markdown/syntax"
+                        },
+                        {
+                            "text": "GitHub Flavored",
+                            "href": "https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax"
+                        },
+                        {
+                            "text": "Shields.io",
+                            "href": "https://shields.io/"
+                        },
+                        {
+                            "text": "Devicon",
+                            "href": "https://devicon.dev/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "IDE",
+                    "links": [
+                        {
+                            "text": "Visual Studio Code",
+                            "href": "https://code.visualstudio.com/"
+                        },
+                        {
+                            "text": "VSC macOS Shortcuts",
+                            "href": "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf"
+                        },
+                        {
+                            "text": "VSC Windows Shortcuts",
+                            "href": "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf"
+                        },
+                        {
+                            "text": "vscode.dev",
+                            "href": "https://vscode.dev/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Quick Reference",
+                    "links": [
+                        {
+                            "text": "MDN Web Docs",
+                            "href": "https://developer.mozilla.org/"
+                        },
+                        {
+                            "text": "CSS-Tricks",
+                            "href": "https://css-tricks.com/"
+                        },
+                        {
+                            "text": "W3Schools",
+                            "href": "https://www.w3schools.com/"
+                        },
+                        {
+                            "text": "Guru99",
+                            "href": "https://www.guru99.com/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Cheat Sheet",
+                    "links": [
+                        {
+                            "text": "Couleurs du Web",
+                            "href": "https://fr.wikipedia.org/wiki/Couleur_du_Web#Noms_des_couleurs_HTML"
+                        },
+                        {
+                            "text": "CSS Selector Reference",
+                            "href": "https://www.w3schools.com/cssref/css_selectors.php"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Language",
+                    "links": [
+                        {
+                            "text": "CNRTL",
+                            "href": "https://www.cnrtl.fr/"
+                        },
+                        {
+                            "text": "vatefaireconjuguer",
+                            "href": "https://www.gymglish.com/fr/conjugaison/vatefaireconjuguer"
+                        },
+                        {
+                            "text": "Cambridge Dictionary",
+                            "href": "https://dictionary.cambridge.org/"
+                        },
+                        {
+                            "text": "Google Translate",
+                            "href": "https://translate.google.com"
+                        },
+                        {
+                            "text": "Thesaurus.com",
+                            "href": "https://www.thesaurus.com/"
+                        },
+                        {
+                            "text": "Wiktionary",
+                            "href": "https://www.wiktionary.org/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "pageTitle": "JavaScript",
             "cards": [
                 {
@@ -48,6 +175,15 @@
                         {
                             "text": "Safari Web Inspector",
                             "href": "https://webkit.org/web-inspector/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Superset",
+                    "links": [
+                        {
+                            "text": "TypeScript",
+                            "href": "https://www.typescriptlang.org/"
                         }
                     ]
                 },
@@ -141,6 +277,10 @@
                         {
                             "text": "Node.js",
                             "href": "https://nodejs.org/"
+                        },
+                        {
+                            "text": "Yarn",
+                            "href": "https://yarnpkg.com/"
                         },
                         {
                             "text": "npm",
@@ -247,6 +387,15 @@
                             "href": "https://restfulapi.net/"
                         }
                     ]
+                },
+                {
+                    "cardHeader": "Analytics",
+                    "links": [
+                        {
+                            "text": "Google Analytics 4",
+                            "href": "https://support.google.com/analytics/answer/10089681"
+                        }
+                    ]
                 }
             ]
         },
@@ -259,6 +408,10 @@
                         {
                             "text": "iconmonstr",
                             "href": "https://iconmonstr.com/"
+                        },
+                        {
+                            "text": "Font Awesome",
+                            "href": "https://fontawesome.com/"
                         },
                         {
                             "text": "Lorem Picsum",
@@ -354,112 +507,6 @@
                         {
                             "text": "Microsoft",
                             "href": "https://learn.microsoft.com"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "pageTitle": "Development",
-            "cards": [
-                {
-                    "cardHeader": "DVCS",
-                    "links": [
-                        {
-                            "text": "Git",
-                            "href": "https://git-scm.com/"
-                        },
-                        {
-                            "text": "GitHub",
-                            "href": "https://github.com/"
-                        },
-                        {
-                            "text": "GitLab",
-                            "href": "https://about.gitlab.com/"
-                        }
-                    ]
-                },
-                {
-                    "cardHeader": ".md",
-                    "links": [
-                        {
-                            "text": "Markdown Syntax",
-                            "href": "https://daringfireball.net/projects/markdown/syntax"
-                        },
-                        {
-                            "text": "GitHub Flavored",
-                            "href": "https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax"
-                        }
-                    ]
-                },
-                {
-                    "cardHeader": "IDE",
-                    "links": [
-                        {
-                            "text": "Visual Studio Code",
-                            "href": "https://code.visualstudio.com/"
-                        },
-                        {
-                            "text": "VSC macOS Shortcuts",
-                            "href": "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf"
-                        },
-                        {
-                            "text": "VSC Windows Shortcuts",
-                            "href": "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf"
-                        },
-                        {
-                            "text": "vscode.dev",
-                            "href": "https://vscode.dev/"
-                        }
-                    ]
-                },
-                {
-                    "cardHeader": "Quick Reference",
-                    "links": [
-                        {
-                            "text": "MDN Web Docs",
-                            "href": "https://developer.mozilla.org/"
-                        },
-                        {
-                            "text": "CSS-Tricks",
-                            "href": "https://css-tricks.com/"
-                        },
-                        {
-                            "text": "W3Schools",
-                            "href": "https://www.w3schools.com/"
-                        },
-                        {
-                            "text": "Guru99",
-                            "href": "https://www.guru99.com/"
-                        }
-                    ]
-                },
-                {
-                    "cardHeader": "Language",
-                    "links": [
-                        {
-                            "text": "CNRTL",
-                            "href": "https://www.cnrtl.fr/"
-                        },
-                        {
-                            "text": "vatefaireconjuguer",
-                            "href": "https://www.gymglish.com/fr/conjugaison/vatefaireconjuguer"
-                        },
-                        {
-                            "text": "Cambridge Dictionary",
-                            "href": "https://dictionary.cambridge.org/"
-                        },
-                        {
-                            "text": "Google Translate",
-                            "href": "https://translate.google.com"
-                        },
-                        {
-                            "text": "Thesaurus.com",
-                            "href": "https://www.thesaurus.com/"
-                        },
-                        {
-                            "text": "Wiktionary",
-                            "href": "https://www.wiktionary.org/"
                         }
                     ]
                 }
