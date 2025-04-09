@@ -88,6 +88,10 @@
                     "cardHeader": "Cheat Sheet",
                     "links": [
                         {
+                            "text": "Emmet",
+                            "href": "https://docs.emmet.io/cheat-sheet/"
+                        },
+                        {
                             "text": "Couleurs du Web",
                             "href": "https://fr.wikipedia.org/wiki/Couleur_du_Web#Noms_des_couleurs_HTML"
                         },
