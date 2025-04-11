@@ -183,11 +183,24 @@
                     ]
                 },
                 {
+                    "cardHeader": "Documentation",
+                    "links": [
+                        {
+                            "text": "JSDoc",
+                            "href": "https://jsdoc.app/"
+                        }
+                    ]
+                },
+                {
                     "cardHeader": "Superset",
                     "links": [
                         {
                             "text": "TypeScript",
                             "href": "https://www.typescriptlang.org/"
+                        },
+                        {
+                            "text": "TS Cheat Sheets",
+                            "href": "https://www.typescriptlang.org/cheatsheets/"
                         }
                     ]
                 },
