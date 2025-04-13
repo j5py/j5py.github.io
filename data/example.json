@@ -149,6 +149,10 @@
                         {
                             "text": "W3Schools",
                             "href": "https://www.w3schools.com/js/default.asp"
+                        },
+                        {
+                            "text": "javascript.info",
+                            "href": "https://javascript.info/"
                         }
                     ]
                 },
