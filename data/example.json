@@ -43,19 +43,27 @@
                     ]
                 },
                 {
-                    "cardHeader": "IDE",
+                    "cardHeader": "Visual Studio Code",
                     "links": [
                         {
-                            "text": "Visual Studio Code",
-                            "href": "https://code.visualstudio.com/"
+                            "text": "Linux Shortcuts",
+                            "href": "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf"
                         },
                         {
-                            "text": "VSC macOS Shortcuts",
+                            "text": "macOS Shortcuts",
                             "href": "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf"
                         },
                         {
-                            "text": "VSC Windows Shortcuts",
+                            "text": "Windows Shortcuts",
                             "href": "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf"
+                        },
+                        {
+                            "text": "Copilot Cheat Sheet",
+                            "href": "https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features"
+                        },
+                        {
+                            "text": "Visual Studio Code",
+                            "href": "https://code.visualstudio.com/"
                         },
                         {
                             "text": "vscode.dev",
@@ -459,6 +467,15 @@
             "pageTitle": "Resources",
             "cards": [
                 {
+                    "cardHeader": "AI and LLMs",
+                    "links": [
+                        {
+                            "text": "Duck.ai",
+                            "href": "https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat&duckai=1"
+                        }
+                    ]
+                },
+                {
                     "cardHeader": "Standards",
                     "links": [
                         {
@@ -583,6 +600,10 @@
     ],
     "footer": {
         "links": [
+            {
+                "text": "Technical notes",
+                "href": "https://github.com/j5py/notes/tree/main/see"
+            },
             {
                 "text": "Hosted on GitHub Pages",
                 "href": "https://pages.github.com"
