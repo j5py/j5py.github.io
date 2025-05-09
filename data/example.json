@@ -72,6 +72,27 @@
                     ]
                 },
                 {
+                    "cardHeader": "VSC Extensions",
+                    "links": [
+                        {
+                            "text": "ESLint",
+                            "href": "https://marketplace.visualstudio.com/items/?itemName=dbaeumer.vscode-eslint"
+                        },
+                        {
+                            "text": "GitLens",
+                            "href": "https://marketplace.visualstudio.com/items/?itemName=eamodio.gitlens"
+                        },
+                        {
+                            "text": "Import Cost",
+                            "href": "https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost"
+                        },
+                        {
+                            "text": "GitHub Copilot",
+                            "href": "https://marketplace.visualstudio.com/items/?itemName=GitHub.copilot"
+                        }
+                    ]
+                },
+                {
                     "cardHeader": "Quick Reference",
                     "links": [
                         {
@@ -106,6 +127,19 @@
                         {
                             "text": "CSS Selector Reference",
                             "href": "https://www.w3schools.com/cssref/css_selectors.php"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Utilities",
+                    "links": [
+                        {
+                            "text": "DiffNow",
+                            "href": "https://www.diffnow.com/compare-clips"
+                        },
+                        {
+                            "text": "beautifier.io",
+                            "href": "https://beautifier.io/"
                         }
                     ]
                 },
@@ -514,6 +548,15 @@
                     ]
                 },
                 {
+                    "cardHeader": "HTTP",
+                    "links": [
+                        {
+                            "text": "Status codes",
+                            "href": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status"
+                        }
+                    ]
+                },
+                {
                     "cardHeader": "Characters",
                     "links": [
                         {
@@ -545,6 +588,32 @@
                         {
                             "text": "Microsoft",
                             "href": "https://learn.microsoft.com"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Tests",
+                    "links": [
+                        {
+                            "text": "Postman",
+                            "href": "https://www.postman.com/"
+                        },
+                        {
+                            "text": "Requestly",
+                            "href": "https://requestly.com/"
+                        },
+                        {
+                            "text": "BrowserStack",
+                            "href": "https://www.browserstack.com/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Security",
+                    "links": [
+                        {
+                            "text": "list",
+                            "href": "https://github.com/j5py/list/blob/main/README.md"
                         }
                     ]
                 }
