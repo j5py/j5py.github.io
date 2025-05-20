@@ -134,12 +134,16 @@
                     "cardHeader": "Utilities",
                     "links": [
                         {
-                            "text": "DiffNow",
-                            "href": "https://www.diffnow.com/compare-clips"
+                            "text": "Temp Mail",
+                            "href": "https://temp-mail.org/"
                         },
                         {
                             "text": "beautifier.io",
                             "href": "https://beautifier.io/"
+                        },
+                        {
+                            "text": "DiffNow",
+                            "href": "https://www.diffnow.com/compare-clips"
                         }
                     ]
                 },
@@ -302,6 +306,19 @@
                         {
                             "text": "ReactPlayer Demo",
                             "href": "https://cookpete.github.io/react-player/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "React (Mobile OSs)",
+                    "links": [
+                        {
+                            "text": "React Native",
+                            "href": "https://reactnative.dev/"
+                        },
+                        {
+                            "text": "React & Capacitor",
+                            "href": "https://capacitorjs.com/solution/react"
                         }
                     ]
                 },
