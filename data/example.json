@@ -89,6 +89,10 @@
                         {
                             "text": "GitHub Copilot",
                             "href": "https://marketplace.visualstudio.com/items/?itemName=GitHub.copilot"
+                        },
+                        {
+                            "text": "Live Share",
+                            "href": "https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare"
                         }
                     ]
                 },
