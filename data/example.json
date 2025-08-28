@@ -5,40 +5,94 @@
             "pageTitle": "Development",
             "cards": [
                 {
-                    "cardHeader": "DVCS",
+                    "cardHeader": "Language",
                     "links": [
                         {
-                            "text": "Git",
-                            "href": "https://git-scm.com/"
+                            "text": "CNRTL",
+                            "href": "https://www.cnrtl.fr/definition/"
                         },
                         {
-                            "text": "GitHub",
-                            "href": "https://github.com/"
+                            "text": "vatefaireconjuguer",
+                            "href": "https://www.gymglish.com/fr/conjugaison/vatefaireconjuguer"
                         },
                         {
-                            "text": "GitLab",
-                            "href": "https://about.gitlab.com/"
+                            "text": "Cambridge Dictionary",
+                            "href": "https://dictionary.cambridge.org/"
+                        },
+                        {
+                            "text": "Google Translate",
+                            "href": "https://translate.google.com"
+                        },
+                        {
+                            "text": "Thesaurus.com",
+                            "href": "https://www.thesaurus.com/"
+                        },
+                        {
+                            "text": "Wiktionary",
+                            "href": "https://www.wiktionary.org/"
                         }
                     ]
                 },
                 {
-                    "cardHeader": ".md",
+                    "cardHeader": "Quick Reference",
                     "links": [
                         {
-                            "text": "Markdown Syntax",
-                            "href": "https://daringfireball.net/projects/markdown/syntax"
+                            "text": "SOLID",
+                            "href": "https://en.wikipedia.org/wiki/SOLID"
                         },
                         {
-                            "text": "GitHub Flavored",
-                            "href": "https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax"
+                            "text": "MDN Web Docs",
+                            "href": "https://developer.mozilla.org/"
                         },
                         {
-                            "text": "Shields.io",
-                            "href": "https://shields.io/"
+                            "text": "CSS-Tricks",
+                            "href": "https://css-tricks.com/"
                         },
                         {
-                            "text": "Devicon",
-                            "href": "https://devicon.dev/"
+                            "text": "W3Schools",
+                            "href": "https://www.w3schools.com/"
+                        },
+                        {
+                            "text": "Guru99",
+                            "href": "https://www.guru99.com/"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Cheat Sheet",
+                    "links": [
+                        {
+                            "text": "Emmet",
+                            "href": "https://docs.emmet.io/cheat-sheet/"
+                        },
+                        {
+                            "text": "Couleurs du Web",
+                            "href": "https://fr.wikipedia.org/wiki/Couleur_du_Web#Noms_des_couleurs_HTML"
+                        },
+                        {
+                            "text": "CSS Selector Reference",
+                            "href": "https://www.w3schools.com/cssref/css_selectors.php"
+                        },
+                        {
+                            "text": "Chrome shortcuts",
+                            "href": "https://support.google.com/chrome/answer/157179?hl=en&co=GENIE.Platform%3DDesktop#zippy=%2Ctab-window-shortcuts"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "Utilities",
+                    "links": [
+                        {
+                            "text": "Temp Mail",
+                            "href": "https://temp-mail.org/"
+                        },
+                        {
+                            "text": "beautifier.io",
+                            "href": "https://beautifier.io/"
+                        },
+                        {
+                            "text": "DiffNow",
+                            "href": "https://www.diffnow.com/compare-clips"
                         }
                     ]
                 },
@@ -72,12 +126,25 @@
                     ]
                 },
                 {
-                    "cardHeader": "VSC Extensions",
+                    "cardHeader": "VSC Essentials",
                     "links": [
                         {
                             "text": "ESLint",
                             "href": "https://marketplace.visualstudio.com/items/?itemName=dbaeumer.vscode-eslint"
                         },
+                        {
+                            "text": "Prettier",
+                            "href": "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+                        },
+                        {
+                            "text": "React Snippets",
+                            "href": "https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets"
+                        }
+                    ]
+                },
+                {
+                    "cardHeader": "VSC Additions",
+                    "links": [
                         {
                             "text": "GitLens",
                             "href": "https://marketplace.visualstudio.com/items/?itemName=eamodio.gitlens"
@@ -91,92 +158,50 @@
                             "href": "https://marketplace.visualstudio.com/items/?itemName=GitHub.copilot"
                         },
                         {
+                            "text": "GitHub Actions",
+                            "href": "https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions"
+                        },
+                        {
                             "text": "Live Share",
                             "href": "https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare"
                         }
                     ]
                 },
                 {
-                    "cardHeader": "Quick Reference",
+                    "cardHeader": "DVCS",
                     "links": [
                         {
-                            "text": "MDN Web Docs",
-                            "href": "https://developer.mozilla.org/"
+                            "text": "Git Reference",
+                            "href": "https://git-scm.com/docs"
                         },
                         {
-                            "text": "CSS-Tricks",
-                            "href": "https://css-tricks.com/"
+                            "text": "GitHub",
+                            "href": "https://github.com/"
                         },
                         {
-                            "text": "W3Schools",
-                            "href": "https://www.w3schools.com/"
-                        },
-                        {
-                            "text": "Guru99",
-                            "href": "https://www.guru99.com/"
+                            "text": "GitLab",
+                            "href": "https://about.gitlab.com/"
                         }
                     ]
                 },
                 {
-                    "cardHeader": "Cheat Sheet",
+                    "cardHeader": ".md",
                     "links": [
                         {
-                            "text": "Emmet",
-                            "href": "https://docs.emmet.io/cheat-sheet/"
+                            "text": "Markdown Syntax",
+                            "href": "https://daringfireball.net/projects/markdown/syntax"
                         },
                         {
-                            "text": "Couleurs du Web",
-                            "href": "https://fr.wikipedia.org/wiki/Couleur_du_Web#Noms_des_couleurs_HTML"
+                            "text": "GitHub Flavored",
+                            "href": "https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax"
                         },
                         {
-                            "text": "CSS Selector Reference",
-                            "href": "https://www.w3schools.com/cssref/css_selectors.php"
-                        }
-                    ]
-                },
-                {
-                    "cardHeader": "Utilities",
-                    "links": [
-                        {
-                            "text": "Temp Mail",
-                            "href": "https://temp-mail.org/"
+                            "text": "Shields.io",
+                            "href": "https://shields.io/"
                         },
                         {
-                            "text": "beautifier.io",
-                            "href": "https://beautifier.io/"
-                        },
-                        {
-                            "text": "DiffNow",
-                            "href": "https://www.diffnow.com/compare-clips"
-                        }
-                    ]
-                },
-                {
-                    "cardHeader": "Language",
-                    "links": [
-                        {
-                            "text": "CNRTL",
-                            "href": "https://www.cnrtl.fr/"
-                        },
-                        {
-                            "text": "vatefaireconjuguer",
-                            "href": "https://www.gymglish.com/fr/conjugaison/vatefaireconjuguer"
-                        },
-                        {
-                            "text": "Cambridge Dictionary",
-                            "href": "https://dictionary.cambridge.org/"
-                        },
-                        {
-                            "text": "Google Translate",
-                            "href": "https://translate.google.com"
-                        },
-                        {
-                            "text": "Thesaurus.com",
-                            "href": "https://www.thesaurus.com/"
-                        },
-                        {
-                            "text": "Wiktionary",
-                            "href": "https://www.wiktionary.org/"
+                            "text": "Devicon",
+                            "href": "https://devicon.dev/"
                         }
                     ]
                 }
@@ -276,11 +301,11 @@
                     ]
                 },
                 {
-                    "cardHeader": "React (State)",
+                    "cardHeader": "React (Libraries)",
                     "links": [
                         {
-                            "text": "React Redux",
-                            "href": "https://react-redux.js.org/"
+                            "text": "TanStack React Query",
+                            "href": "https://tanstack.com/query/latest/docs/framework/react/overview"
                         },
                         {
                             "text": "React testing library",
@@ -289,6 +314,10 @@
                         {
                             "text": "Jest",
                             "href": "https://jestjs.io/docs/getting-started"
+                        },
+                        {
+                            "text": "Redux",
+                            "href": "https://react-redux.js.org/"
                         }
                     ]
                 },
@@ -314,7 +343,7 @@
                     ]
                 },
                 {
-                    "cardHeader": "React (Mobile OSs)",
+                    "cardHeader": "React (Mobile)",
                     "links": [
                         {
                             "text": "React Native",
